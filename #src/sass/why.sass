@@ -1,0 +1,46 @@
+@import "base"
+
+.why
+    color: $white
+    background-image: url("../img/backgrounds/1.webp")
+
+    .container
+        padding: 82px 160px 64px
+
+    &__phrase
+        font-family: "Thirsty Caps"
+        font-size: 90px
+        line-height: 80px
+        text-shadow: 0 5px 15px rgba(0, 0, 0, 0.4)
+        text-align: center
+        color: $yellow
+        letter-spacing: 0.03em
+
+    &__items
+        display: flex
+        gap: 4px
+        margin-bottom: 65px
+
+        .item
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding-top: 35px
+            width: 220px
+
+            &__icon
+                margin-bottom: 50px
+                height: 80px
+
+            &__title
+                margin-bottom: 15px
+                font-weight: 700
+                font-size: 20px
+                line-height: 25px
+                text-align: center
+
+            &__desc
+                font-weight: 600
+                font-size: 13px
+                line-height: 16px
+                text-align: center

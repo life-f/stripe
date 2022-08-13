@@ -1,0 +1,137 @@
+@import base
+
+.first
+    &__title
+        font-family: "Thirsty Caps"
+        font-size: 130px
+        line-height: 116px
+        color: $yellow
+
+        & > *
+            display: inline
+
+        &-lower
+            font-size: 100px
+            line-height: 89px
+
+    .slick-dotted.slick-slider
+        margin-bottom: 0
+
+    .slide
+        height: 676px
+        background-position: center
+        background-size: cover
+
+        .container
+            padding: 60px 34px
+
+
+        &-who
+            background-image: url("../img/backgrounds/Фон 1.webp")
+
+            .container
+                display: grid
+                grid-template-columns: 1fr 1fr
+                align-items: center
+
+            .slide__title
+                text-align: center
+
+            .slide__images
+                position: relative
+                min-height: 560px
+                min-width: 600px
+                display: grid
+                picture
+                    position: relative
+                    img
+                        width: 100%
+                .image-hello
+                    //position: absolute
+                    //top: 25px
+                    //right: 0
+                    width: 300px
+
+                    grid-column: 3/6
+                    grid-row: 1/4
+                    place-self: start end
+                .image-flakes
+                    width: 483px
+                    height: auto
+                    //position: absolute
+                    //top: 0
+                    //left: 0
+                    grid-column: 1/6
+                    grid-row: 1/4
+
+                .image-pine
+                    grid-column: 3/6
+                    grid-row: 2/6
+                    width: 430px
+                    height: auto
+                    place-self: end
+                    //position: absolute
+                    //bottom: 0
+                    //left: 185px
+
+        &-shop
+            background-image: url("../img/backgrounds/Фон 2.webp")
+
+            & .container
+                height: 100%
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                background-image: url("../img/first-shop.webp")
+                //background-position-y: -54px
+                background-position-y: bottom
+                background-position-x: center
+                background-repeat: no-repeat
+
+
+            & .h1
+                font-size: 130px
+                line-height: 150px
+                margin-bottom: 36px
+
+    &__dots
+        z-index: 10
+        bottom: 60px
+
+        li
+            width: 36px
+            height: 36px
+            background-color: $white
+            border-radius: 50%
+
+            &.slick-active
+                background-color: $red-purple
+
+            & button
+                display: none
+
+    &__arrow
+        position: absolute
+        top: 50%
+        width: 47px
+        height: 47px
+        padding: 5px
+        border-radius: 4px
+        background-image: url("../img/arrow.svg")
+        background-position: center
+        background-color: $light-grey
+        background-repeat: no-repeat
+        opacity: 0.6
+        z-index: 10
+
+        &.arrow-prev
+            left: 5%
+
+        &.arrow-next
+            right: 5%
+            transform: rotate(180deg)
+
+        &:hover
+            opacity: 1
+            cursor: pointer

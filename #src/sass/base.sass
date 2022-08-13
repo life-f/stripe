@@ -1,0 +1,280 @@
+/* Экраны */
+$mobileS: 360px
+//$mobileM: 414px
+//$mobileL: 568px
+$tabletS: 768px
+//$tabletM: 1024px
+$desktopS: 1440px
+//$desktopM: 1600px
+//$desktopL: 1920px
+
+/* Цвета */
+$white: rgba(255, 255, 255, 1)
+$black: rgba(0, 0, 0, 1)
+$light-grey: rgba(214, 212, 212, 1)
+$yellow: #FAE420
+$red-purple: #AA0250
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap')
+
+@font-face
+    font-family: "Spray Letters"
+    src: url("../fonts/SprayLetters.otf") format("opentype")
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+
+@font-face
+    font-family: "Thirsty Caps"
+    src: url("../fonts/thirsty_caps/thirsty_caps/ThirstyCaps.otf") format("opentype")
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+
+@font-face
+    font-family: "Inter"
+    src: url("../fonts/Inter/Inter-Regular.otf") format("opentype")
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+
+@font-face
+    font-family: 'Gilroy'
+    src: url('../fonts/Gilroy/Gilroy-Regular.eot')
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+    url('../fonts/Gilroy/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy/Gilroy-Regular.woff') format('woff'),
+    url('../fonts/Gilroy/Gilroy-Regular.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+
+
+@font-face
+    font-family: 'Gilroy'
+    src: url('../fonts/Gilroy/Gilroy-Medium.eot')
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+    url('../fonts/Gilroy/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy/Gilroy-Medium.woff') format('woff'),
+    url('../fonts/Gilroy/Gilroy-Medium.ttf') format('truetype')
+    font-weight: 500
+    font-style: normal
+
+@font-face
+    font-family: 'Gilroy'
+    src: url('../fonts/Gilroy/Gilroy-SemiBold.eot')
+    src: local('Gilroy SemiBold'), local('Gilroy-SemiBold'),
+    url('../fonts/Gilroy/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy/Gilroy-SemiBold.woff') format('woff'),
+    url('../fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype')
+    font-weight: 600
+    font-style: normal
+
+@font-face
+    font-family: 'Gilroy'
+    src: url('../fonts/Gilroy/Gilroy-Bold.eot')
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+    url('../fonts/Gilroy/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy/Gilroy-Bold.woff') format('woff'),
+    url('../fonts/Gilroy/Gilroy-Bold.ttf') format('truetype')
+    font-weight: bold
+    font-style: normal
+//
+html
+    overflow-x: hidden
+
+body
+    margin: 0
+    font-family: "Gilroy"
+    font-weight: 400
+    font-size: 20px
+    line-height: 20px
+    color: $black
+    //overflow: hidden
+//@media screen and (max-width: $tabletS)
+    font-size: 18px
+    line-height: 21px
+
+.container
+    width: 1440px
+    margin: 0 auto
+//@media screen and (max-width: $desktopS)
+    width: 1200px
+//@media screen and (max-width: $tabletM)
+    width: 90vw
+//@media screen and (max-width: $mobileL)
+    padding: 30px
+    width: 100vw
+
+div
+    box-sizing: border-box
+
+//h1, h2, h3
+//    font-family: 'Georgia', serif
+//    font-weight: 400
+//    margin: 0
+//
+h1, .h1
+    font-family: "Spray Letters"
+    font-size: 90px
+    line-height: 104px
+    text-transform: uppercase
+    color: $yellow
+//@media screen and (max-width: $tabletS)
+    margin-bottom: 20px
+    font-size: 48px
+
+h2, .h2
+    margin-top: 0
+    margin-bottom: 40px
+    font-family: "Thirsty Caps"
+    font-size: 70px
+    line-height: 62px
+    text-align: center
+    letter-spacing: 0.03em
+//@media screen and (max-width: $tabletS)
+    margin-bottom: 40px
+    font-size: 30px
+    line-height: 34px
+
+//h3
+//    font-size: 36px
+//    line-height: 41px
+//    margin-bottom: 10px
+//    text-align: center
+//    @media screen and (max-width: $tabletS)
+//        font-size: 24px
+//        line-height: 27px
+//
+//h4, h5, h6
+//    font-family: Roboto, sans-serif
+//    font-weight: 400
+//    margin: 0
+//
+//h4
+//    margin-bottom: 40px
+//    font-weight: 500
+//    font-size: 30px
+//    line-height: 35px
+//    color: $white-grey
+//    @media screen and (max-width: $tabletS)
+//        margin-bottom: 20px
+//        font-size: 24px
+//        line-height: 28px
+//        text-align: center
+//
+//h5
+//    margin-bottom: 10px
+//    font-size: 18px
+//    line-height: 21px
+
+section
+    background-size: cover
+    background-position: center
+
+button, .btn
+    padding: 14px 30px
+    background-color: $white
+    border-radius: 8px
+    font-family: "Inter"
+    font-size: 30px
+    line-height: 36px
+    text-transform: uppercase
+    color: $black
+    transition: .3s ease-in-out
+
+    &:hover
+        background-color: $red-purple
+        color: $white
+        text-decoration: none
+        cursor: pointer
+
+
+//
+//.light-btn
+//    background-color: $light-grey
+//    color: $black
+//
+//.dark-btn
+//    background-color: $blue
+//    color: $white-grey
+//
+//p
+//    margin: 0
+//
+a
+    color: $black
+    text-decoration: none
+
+    &:hover
+        text-decoration: underline
+        cursor: pointer
+
+.yellow
+    color: $yellow
+
+.f-gilroy
+    font-family: 'Gilroy'
+
+.fs-25
+    font-size: 25px
+    line-height: 31px
+
+.fs-20
+    font-size: 20px
+
+.fs-23
+    font-size: 23px
+
+.lh-20
+    line-height: 20px
+
+.lh-26
+    line-height: 26px
+
+.fw-400
+    font-weight: 400
+
+.fw-500
+    font-weight: 500
+
+.fw-600
+    font-weight: 600
+
+.back-img
+    position: absolute
+    opacity: 0.05
+//
+//.slick-dots
+//    bottom: -80px
+//
+//    li
+//        & > button
+//            background-color: $dark-blue
+//            opacity: 0.5
+//
+//            &:before
+//                content: ""
+//
+//        &.slick-active
+//            & > button
+//                opacity: 1
+//
+//.arrow
+//    position: absolute
+//    top: 40%
+//    width: 60px
+//    height: 120px
+//    background-size: cover
+//    @media screen and (max-width: $desktopS)
+//        &-prev
+//            left: -90px
+//        &-next
+//            right: -90px
+//
+//    &-prev
+//        left: -130px
+//        background-image: url("../img/arrow-prev.png")
+//
+//    &-next
+//        right: -130px
+//        background-image: url("../img/arrow-next.png")
