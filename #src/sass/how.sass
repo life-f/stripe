@@ -1,8 +1,15 @@
 @import "base"
 .how
+    position: relative
     padding-top: 63px
     color: $white
     background-image: url("../img/backgrounds/1.webp")
+
+    .back-img
+        width: 313px
+        top: -5px
+        left: -10px
+        transform: scaleX(-1)
 
     h2
         margin-bottom: 0
@@ -20,7 +27,7 @@
         li
             width: 16px
             height: 16px
-            background-color: $grey
+            background-color: $dark-grey
             border-radius: 50%
 
             &.slick-active

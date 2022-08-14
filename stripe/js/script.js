@@ -130,6 +130,29 @@ $(document).ready(function () {
                 }
             ]
         });
+        $('.products__slider').slick({
+            variableWidth: false,
+            centerMode: true,
+            // centerPadding: '35px',
+            dots: true,
+            dotsClass: "slick-dots products__dots",
+            arrows: true,
+            prevArrow: '<div class="arrow-prev products__arrow arrow"></div>',
+            nextArrow: '<div class="arrow-next products__arrow arrow"></div>',
+            slidesToShow: 3,
+            infinite: true,
+            // responsive: [
+            //     {
+            //         breakpoint: 560,
+            //         settings: {
+            //             variableWidth: false,
+            //             slidesToShow: 1,
+            //             arrows: false,
+            //             dots: true,
+            //         }
+            //     }
+            // ]
+        });
 
         /**
          * Форма для заявки

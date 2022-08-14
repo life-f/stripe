@@ -13,11 +13,12 @@ $white: rgba(255, 255, 255, 1)
 $black: rgba(0, 0, 0, 1)
 $black-op50: rgba(0, 0, 0, 0.5)
 $light-grey: rgb(214, 212, 212)
-$grey: #676767
+$grey: #AFAFAF
+$dark-grey: #676767
 $yellow: #FAE420
 $red-purple: #AA0250
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap')
 
 @font-face
     font-family: "Spray Letters"
@@ -98,8 +99,8 @@ body
     margin: 0
     font-family: "Gilroy"
     font-weight: 400
-    font-size: 20px
-    line-height: 20px
+    font-size: 18px
+    line-height: 22px
     color: $black
 //overflow: hidden
 //@media screen and (max-width: $tabletS)
@@ -184,21 +185,44 @@ section
     background-position: center
 
 button, .btn
+    display: block
+    box-sizing: border-box
     padding: 14px 30px
-    background-color: $white
     border-radius: 8px
     font-family: "Inter"
     font-size: 30px
     line-height: 36px
     text-transform: uppercase
-    color: $black
     transition: .3s ease-in-out
+    text-align: center
 
     &:hover
-        background-color: $red-purple
-        color: $white
         text-decoration: none
         cursor: pointer
+
+    &-white
+        background-color: $white
+        color: $black
+
+        &:hover
+            background-color: $red-purple
+            color: $white
+
+    &-red
+        background-color: $red-purple
+        color: $white
+
+        &:hover
+            background-color: $white
+            color: $black
+
+    &-black
+        background-color: $black
+        color: $white
+
+        &:hover
+            background-color: $white
+            color: $black
 
 
 //
@@ -254,7 +278,10 @@ a
 
 .back-img
     position: absolute
-    opacity: 0.05
+    opacity: 0.15
+
+.slick-dotted.slick-slider
+    margin-bottom: 0
 //
 //.slick-dots
 //    bottom: -80px

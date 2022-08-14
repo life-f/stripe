@@ -4,8 +4,9 @@
 
 /* Цвета */
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;
 
+700&display=swap");
 @font-face {
   font-family: "Spray Letters";
   src: url("../fonts/SprayLetters.otf") format("opentype");
@@ -78,8 +79,8 @@ body {
   margin: 0;
   font-family: "Gilroy";
   font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 22px;
   color: black;
 }
 
@@ -120,25 +121,61 @@ section {
 
 button,
 .btn {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 14px 30px;
-  background-color: white;
   border-radius: 8px;
   font-family: "Inter";
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  color: black;
   -webkit-transition: .3s ease-in-out;
   -o-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
+  text-align: center;
 }
 
 button:hover,
 .btn:hover {
-  background-color: #AA0250;
-  color: white;
   text-decoration: none;
   cursor: pointer;
+}
+
+button-white,
+.btn-white {
+  background-color: white;
+  color: black;
+}
+
+button-white:hover,
+.btn-white:hover {
+  background-color: #AA0250;
+  color: white;
+}
+
+button-red,
+.btn-red {
+  background-color: #AA0250;
+  color: white;
+}
+
+button-red:hover,
+.btn-red:hover {
+  background-color: white;
+  color: black;
+}
+
+button-black,
+.btn-black {
+  background-color: black;
+  color: white;
+}
+
+button-black:hover,
+.btn-black:hover {
+  background-color: white;
+  color: black;
 }
 
 a {
@@ -194,13 +231,27 @@ a:hover {
 
 .back-img {
   position: absolute;
-  opacity: 0.05;
+  opacity: 0.15;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
 }
 
 .how {
+  position: relative;
   padding-top: 63px;
   color: white;
   background-image: url("../img/backgrounds/1.webp");
+}
+
+.how .back-img {
+  width: 313px;
+  top: -5px;
+  left: -10px;
+  -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 .how h2 {

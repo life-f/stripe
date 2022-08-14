@@ -1,11 +1,16 @@
 .about {
   position: relative;
-  padding: 65px 0;
   background-image: url("../img/backgrounds/3.webp");
 }
 
 .about .container {
-  padding: 0 144px;
+  position: relative;
+  padding: 65px 144px;
+  overflow: hidden;
+}
+
+.about h2 {
+  text-decoration: underline;
 }
 
 .about .img-left {
@@ -15,6 +20,7 @@
 }
 
 .about .back-img {
+  z-index: 0;
   top: -49px;
   left: 639px;
   width: 1083px;
@@ -32,9 +38,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -47,8 +50,29 @@
 }
 
 .about__design .design__text {
+  font-family: "Thirsty Caps";
+  font-size: 75px;
+  line-height: 67px;
+  text-align: center;
+  letter-spacing: 0.04em;
   max-width: 359px;
-  margin-top: -40px;
+  margin-top: 40px;
+  margin-bottom: 64px;
+}
+
+.about__design .design__content {
+  position: relative;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @supports (-webkit-appearance:none){
 
