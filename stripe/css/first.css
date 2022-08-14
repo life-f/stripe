@@ -88,6 +88,7 @@ body {
 .container {
   width: 1440px;
   margin: 0 auto;
+  max-width: 1440px;
 }
 
 div {
@@ -318,8 +319,6 @@ a:hover {
 
 .first .slide-who .slide__images {
   position: relative;
-  min-height: 560px;
-  min-width: 600px;
   display: grid;
 }
 
@@ -436,6 +435,130 @@ a:hover {
   opacity: 1;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  h1,
+  .h1 {
+    font-size: 50px;
+    line-height: 58px;
+  }
+
+  h2,
+  .h2 {
+    margin-bottom: 52px;
+    font-size: 50px;
+    line-height: 44px;
+  }
+
+  button,
+  .btn {
+    padding: 7px 20px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .fs-20 {
+    font-size: 18px;
+  }
+
+  .fs-23 {
+    font-size: 18px;
+  }
+
+  .lh-26 {
+    line-height: 20px;
+  }
+
+  .first__title-lower {
+    font-size: 50px;
+    line-height: 44px;
+  }
+
+  .first__title {
+    font-size: 65px;
+    line-height: 58px;
+  }
+
+  .first .slide {
+    height: 400px;
+  }
+
+  .first .slide-who .slide__title {
+    margin-left: 44px;
+    margin-top: -15px;
+  }
+
+  .first .slide-who .slide__images .image-hello {
+    width: 132px;
+    margin-left: -41px;
+  }
+
+  .first .slide-who .slide__images .image-flakes {
+    width: 217px;
+  }
+
+  .first .slide-who .slide__images .image-pine {
+    width: 207px;
+    margin-top: 0px;
+  }
+
+  .first .slide-shop .container {
+    background-size: contain;
+  }
+
+  .first .slide-shop .h1 {
+    font-size: 90px;
+    line-height: 110px;
+    margin-bottom: 20px;
+  }
+
+  .first__dots {
+    bottom: 50px;
+  }
+
+  .first__dots li {
+    width: 16px;
+    height: 16px;
+    margin: 0 10px;
+  }
+
+  .first__arrow {
+    width: 27px;
+    height: 27px;
+    background-size: 14px;
+    top: 40%;
+  }
+
+  .first__arrow.arrow-prev {
+    left: 20px;
+  }
+
+  .first__arrow.arrow-next {
+    right: 20px;
+  }
+}
 @supports (-webkit-appearance:none){
 .first__arrow{background-image:url("../img/arrow.svg")}
+}
+
+ @media screen and (max-width: 1440px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-width: 1024px){
+
+@supports (-webkit-appearance:none){
+
+}
+
 }

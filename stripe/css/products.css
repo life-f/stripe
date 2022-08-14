@@ -88,6 +88,7 @@ body {
 .container {
   width: 1440px;
   margin: 0 auto;
+  max-width: 1440px;
 }
 
 div {
@@ -288,24 +289,19 @@ a:hover {
 .products__banner {
   position: absolute;
   left: 70px;
+  width: 377px;
+}
+
+.products__banner img {
+  width: 100%;
 }
 
 .products__banner-first {
   top: -85px;
-  width: 377px;
-}
-
-.products__banner-first img {
-  width: 100%;
 }
 
 .products__banner-second {
   top: -57px;
-  width: 377px;
-}
-
-.products__banner-second img {
-  width: 100%;
 }
 
 .products__title {
@@ -424,7 +420,7 @@ a:hover {
 
 .products__slider .slick-list {
   padding: 0 40px !important;
-  height: 330px;
+  height: 320px;
 }
 
 .products__slider.slick-dotted.slick-slider {
@@ -471,6 +467,115 @@ a:hover {
 .products__arrow:hover {
   cursor: pointer;
 }
+
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  h1,
+  .h1 {
+    font-size: 50px;
+    line-height: 58px;
+  }
+
+  h2,
+  .h2 {
+    margin-bottom: 52px;
+    font-size: 50px;
+    line-height: 44px;
+  }
+
+  button,
+  .btn {
+    padding: 7px 20px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .fs-20 {
+    font-size: 18px;
+  }
+
+  .fs-23 {
+    font-size: 18px;
+  }
+
+  .lh-26 {
+    line-height: 20px;
+  }
+
+  .products__container-first {
+    margin-bottom: 56px;
+  }
+
+  .products__banner {
+    left: 30px;
+    width: 290px;
+  }
+
+  .products__banner-first {
+    top: -72px;
+  }
+
+  .products__banner-second {
+    top: -65px;
+  }
+
+  .products .slide {
+    height: 250px;
+  }
+
+  .products .slide.slick-center .slide__image,
+  .products .slide.slick-current .slide__image {
+    width: 250px;
+  }
+
+  .products .slide__image {
+    width: 180px;
+  }
+
+  .products__slider .slick-list {
+    height: 250px;
+  }
+
+  .products__dots li {
+    width: 13px;
+    height: 13px;
+  }
+
+  .products__arrow {
+    width: 200px;
+    height: 200px;
+    top: 25%;
+  }
+
+  .products__arrow.arrow-prev {
+    left: 50px;
+  }
+
+  .products__arrow.arrow-next {
+    right: 50px;
+  }
+}
 @supports (-webkit-appearance:none){
+
+}
+
+ @media screen and (max-width: 1440px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-width: 1024px){
+
+@supports (-webkit-appearance:none){
+
+}
 
 }

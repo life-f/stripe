@@ -2,6 +2,20 @@ $(document).ready(function () {
 
         $(".wrapper").addClass("active")
 
+        $("#yes").click(() => {
+            $(".wrapper").removeClass("active")
+        })
+
+        $(".menu-burger").click(() => {
+            if ($(".menu-burger").hasClass("active")) {
+                $(".menu-burger").removeClass("active")
+                $(".header__menu").removeClass("active")
+            } else {
+                $(".menu-burger").addClass("active")
+                $(".header__menu").addClass("active")
+            }
+        })
+
         var parallaxItem = $('.image-flakes img')[0];
         new simpleParallax(parallaxItem, {
             'overflow': true,

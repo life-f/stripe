@@ -13,6 +13,14 @@
         &-lower
             font-size: 100px
             line-height: 89px
+            @media screen and (max-width: $tabletS)
+                font-size: 50px
+                line-height: 44px
+
+        @media screen and (max-width: $tabletS)
+            font-size: 65px
+            line-height: 58px
+
 
     .slick-dotted.slick-slider
         margin-bottom: 0
@@ -21,6 +29,8 @@
         height: 674px
         background-position: center
         background-size: cover
+        @media screen and (max-width: $tabletS)
+            height: 400px
 
         .container
             padding: 58px 34px 0px
@@ -38,11 +48,15 @@
                 text-align: center
                 margin-top: -68px
                 margin-left: 69px
+                @media screen and (max-width: $tabletS)
+                    margin-left: 44px
+                    margin-top: -15px
+
 
             .slide__images
                 position: relative
-                min-height: 560px
-                min-width: 600px
+                //min-height: 560px
+                //min-width: 600px
                 display: grid
 
                 picture
@@ -59,6 +73,9 @@
                     grid-column: 3/6
                     grid-row: 1/4
                     place-self: start end
+                    @media screen and (max-width: $tabletS)
+                        width: 132px
+                        margin-left: -41px
 
                 .image-flakes
                     width: 410px
@@ -68,6 +85,8 @@
                     //left: 0
                     grid-column: 1/6
                     grid-row: 1/4
+                    @media screen and (max-width: $tabletS)
+                        width: 217px
 
                 .image-pine
                     grid-column: 3/6
@@ -76,6 +95,9 @@
                     width: 430px
                     height: auto
                     place-self: center
+                    @media screen and (max-width: $tabletS)
+                        width: 207px
+                        margin-top: 0px
         //position: absolute
         //bottom: 0
         //left: 185px
@@ -94,16 +116,25 @@
                 background-position-y: bottom
                 background-position-x: center
                 background-repeat: no-repeat
+                @media screen and (max-width: $tabletS)
+                    background-size: contain
 
 
             & .h1
                 font-size: 130px
                 line-height: 150px
                 margin-bottom: 36px
+                @media screen and (max-width: $tabletS)
+                    font-size: 90px
+                    line-height: 110px
+                    margin-bottom: 20px
+
 
     &__dots
         z-index: 10
         bottom: 95px
+        @media screen and (max-width: $tabletS)
+            bottom: 50px
 
         li
             width: 25px
@@ -111,6 +142,10 @@
             background-color: $white
             border-radius: 50%
             margin: 0 13px
+            @media screen and (max-width: $tabletS)
+                width: 16px
+                height: 16px
+                margin: 0 10px
 
             &.slick-active
                 background-color: $red-purple
@@ -131,13 +166,22 @@
         background-repeat: no-repeat
         opacity: 0.6
         z-index: 10
+        @media screen and (max-width: $tabletS)
+            width: 27px
+            height: 27px
+            background-size: 14px
+            top: 40%
 
         &.arrow-prev
             left: 34px
+            @media screen and (max-width: $tabletS)
+                left: 20px
 
         &.arrow-next
             right: 34px
             transform: rotate(180deg)
+            @media screen and (max-width: $tabletS)
+                right: 20px
 
         &:hover
             opacity: 1

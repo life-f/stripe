@@ -88,6 +88,7 @@ body {
 .container {
   width: 1440px;
   margin: 0 auto;
+  max-width: 1440px;
 }
 
 div {
@@ -273,7 +274,7 @@ a:hover {
 }
 
 .wrapper.active {
-  display: block;
+  display: grid;
   position: fixed;
   top: 0;
   left: 0;
@@ -285,6 +286,7 @@ a:hover {
 }
 
 .popup {
+  place-self: center;
   margin: auto;
   padding: 130px 160px;
   background-color: rgba(35, 35, 35, 0.95);
@@ -308,14 +310,14 @@ a:hover {
 .popup__title {
   margin-bottom: 18px;
   font-size: 40px;
-  line-height: 40px;
+  line-height: 100%;
   font-weight: 700;
 }
 
 .popup__subtitle {
   margin-bottom: 25px;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 100%;
   font-weight: 500;
 }
 
@@ -338,6 +340,74 @@ a:hover {
 .popup__btns .btn .content {
   padding: 16px 32px;
 }
+
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  h1,
+  .h1 {
+    font-size: 50px;
+    line-height: 58px;
+  }
+
+  h2,
+  .h2 {
+    margin-bottom: 52px;
+    font-size: 50px;
+    line-height: 44px;
+  }
+
+  button,
+  .btn {
+    padding: 7px 20px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .fs-20 {
+    font-size: 18px;
+  }
+
+  .fs-23 {
+    font-size: 18px;
+  }
+
+  .lh-26 {
+    line-height: 20px;
+  }
+
+  .popup__image {
+    width: 160px;
+  }
+
+  .popup__title {
+    font-size: 18px;
+  }
+
+  .popup__subtitle {
+    font-size: 12px;
+  }
+}
 @supports (-webkit-appearance:none){
+
+}
+
+ @media screen and (max-width: 1440px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-width: 1024px){
+
+@supports (-webkit-appearance:none){
+
+}
 
 }

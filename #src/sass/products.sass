@@ -10,6 +10,8 @@
         &-first
             margin-bottom: 42px
             background-image: url("../img/backgrounds/4.webp")
+            @media screen and (max-width: $tabletS)
+                margin-bottom: 56px
 
         &-second
             background-image: url("../img/backgrounds/5.webp")
@@ -17,20 +19,25 @@
     &__banner
         position: absolute
         left: 70px
+        width: 377px
+
+        img
+            width: 100%
+
+        @media screen and (max-width: $tabletS)
+            left: 30px
+            width: 290px
 
         &-first
             top: -85px
-            width: 377px
-
-            img
-                width: 100%
+            @media screen and (max-width: $tabletS)
+                top: -72px
 
         &-second
             top: -57px
-            width: 377px
+            @media screen and (max-width: $tabletS)
+                top: -65px
 
-            img
-                width: 100%
 
     &__title
         margin-bottom: 3px
@@ -77,11 +84,15 @@
         align-items: flex-end
         height: 320px
         transition: 0.3s ease-in-out
+        @media screen and (max-width: $tabletS)
+            height: 250px
 
         &.slick-center,
         &.slick-current
             & .slide__image
                 width: 320px
+                @media screen and (max-width: $tabletS)
+                    width: 250px
 
         &__content
             display: flex
@@ -91,6 +102,9 @@
             width: 250px
             height: auto
             transition: 0.3s ease-in-out
+            @media screen and (max-width: $tabletS)
+                width: 180px
+
 
         &__info
             margin-left: 0
@@ -113,7 +127,9 @@
 
         & .slick-list
             padding: 0 40px !important
-            height: 330px
+            height: 320px
+            @media screen and (max-width: $tabletS)
+                height: 250px
 
         &.slick-dotted.slick-slider
             padding-top: 19px
@@ -128,6 +144,9 @@
             height: 20px
             background-color: $grey
             border-radius: 50%
+            @media screen and (max-width: $tabletS)
+                width: 13px
+                height: 13px
 
             &.slick-active
                 background-color: $black
@@ -141,12 +160,20 @@
         width: 300px
         height: 300px
         z-index: 10
+        @media screen and (max-width: $tabletS)
+            width: 200px
+            height: 200px
+            top: 25%
 
         &.arrow-prev
             left: 131px
+            @media screen and (max-width: $tabletS)
+                left: 50px
 
         &.arrow-next
             right: 131px
+            @media screen and (max-width: $tabletS)
+                right: 50px
 
         &:hover
             cursor: pointer

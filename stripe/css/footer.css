@@ -88,6 +88,7 @@ body {
 .container {
   width: 1440px;
   margin: 0 auto;
+  max-width: 1440px;
 }
 
 div {
@@ -316,6 +317,62 @@ a:hover {
   line-height: 24px;
   text-align: center;
 }
+
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  h1,
+  .h1 {
+    font-size: 50px;
+    line-height: 58px;
+  }
+
+  h2,
+  .h2 {
+    margin-bottom: 52px;
+    font-size: 50px;
+    line-height: 44px;
+  }
+
+  button,
+  .btn {
+    padding: 7px 20px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .fs-20 {
+    font-size: 18px;
+  }
+
+  .fs-23 {
+    font-size: 18px;
+  }
+
+  .lh-26 {
+    line-height: 20px;
+  }
+}
 @supports (-webkit-appearance:none){
+
+}
+
+ @media screen and (max-width: 1440px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-width: 1024px){
+
+@supports (-webkit-appearance:none){
+
+}
 
 }

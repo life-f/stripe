@@ -3,7 +3,7 @@
     display: none
 
     &.active
-        display: block
+        display: grid
         position: fixed
         top: 0
         left: 0
@@ -14,6 +14,7 @@
         z-index: 100
 
 .popup
+    place-self: center
     margin: auto
     padding: 130px 160px
     background-color: $black-op80
@@ -24,17 +25,25 @@
     flex-direction: column
     align-items: center
 
+    &__image
+        @media screen and (max-width: $tabletS)
+            width: 160px
+
     &__title
         margin-bottom: 18px
         font-size: 40px
-        line-height: 40px
+        line-height: 100%
         font-weight: 700
+        @media screen and (max-width: $tabletS)
+            font-size: 18px
 
     &__subtitle
         margin-bottom: 25px
         font-size: 20px
-        line-height: 20px
+        line-height: 100%
         font-weight: 500
+        @media screen and (max-width: $tabletS)
+            font-size: 12px
 
     &__btns
         display: flex

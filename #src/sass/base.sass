@@ -2,7 +2,7 @@
 $mobileS: 360px
 //$mobileM: 414px
 //$mobileL: 568px
-$tabletS: 768px
+$tabletS: 1024px
 //$tabletM: 1024px
 $desktopS: 1440px
 //$desktopM: 1600px
@@ -113,10 +113,11 @@ body
 .container
     width: 1440px
     margin: 0 auto
-//@media screen and (max-width: $desktopS)
-    width: 1200px
-//@media screen and (max-width: $tabletM)
-    width: 90vw
+    max-width: 1440px
+    @media screen and (max-width: $desktopS)
+        width: 100vw
+//@media screen and (max-width: $tabletS)
+    width: 100vw
 //@media screen and (max-width: $mobileL)
     padding: 30px
     width: 100vw
@@ -137,9 +138,9 @@ h1, .h1
     letter-spacing: 0.03em
     text-transform: uppercase
     color: $yellow
-//@media screen and (max-width: $tabletS)
-    margin-bottom: 20px
-    font-size: 48px
+    @media screen and (max-width: $tabletS)
+        font-size: 50px
+        line-height: 58px
 
 h2, .h2
     margin-top: 0
@@ -150,6 +151,10 @@ h2, .h2
     font-weight: 400
     text-align: center
     letter-spacing: 0.03em
+    @media screen and (max-width: $tabletS)
+        margin-bottom: 52px
+        font-size: 50px
+        line-height: 44px
 //@media screen and (max-width: $tabletS)
     margin-bottom: 40px
     font-size: 30px
@@ -170,6 +175,10 @@ button, .btn
     text-transform: uppercase
     transition: .3s ease-in-out
     text-align: center
+    @media screen and (max-width: $tabletS)
+        padding: 7px 20px
+        font-size: 22px
+        line-height: 28px
 
     &:hover
         text-decoration: none
@@ -238,15 +247,21 @@ a
 
 .fs-20
     font-size: 20px
+    @media screen and (max-width: $tabletS)
+        font-size: 18px
 
 .fs-23
     font-size: 23px
+    @media screen and (max-width: $tabletS)
+        font-size: 18px
 
 .lh-20
     line-height: 20px
 
 .lh-26
     line-height: 26px
+    @media screen and (max-width: $tabletS)
+        line-height: 20px
 
 .fw-400
     font-weight: 400

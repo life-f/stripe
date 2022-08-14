@@ -7,23 +7,49 @@
         position: relative
         padding: 68px 188px
         overflow: hidden
+        @media screen and (max-width: $tabletS)
+            padding: 59px 85px
 
     h2
         margin: 0 auto 40px
         display: block
         width: fit-content
         border-bottom: 3px solid $black
+        @media screen and (max-width: $tabletS)
+            margin-bottom: 52px
 
     .img-left
         position: absolute
         left: 0
         bottom: -122px
+        @media screen and (max-width: $tabletS)
+            width: 258px
+            bottom: -142px
+
 
     .back-img
         z-index: 0
         top: -94px
         left: 639px
         width: 1083px
+        @media screen and (max-width: $tabletS)
+            transform: scaleX(-1) rotate(16deg)
+            width: 609px
+            left: -173px
+            top: -16px
+
+    .img-right
+        display: none
+        position: absolute
+        z-index: 0
+        @media screen and (max-width: $tabletS)
+            opacity: 0.15
+            display: block
+            width: 563px
+            right: -216px
+            left: unset
+            top: 229px
+            transform: rotate(-4deg)
 
     &__text
         margin-bottom: 10px
@@ -33,36 +59,60 @@
         line-height: 23px
         letter-spacing: -0.02em
         text-align: center
+        @media screen and (max-width: $tabletS)
+            font-size: 18px
+            line-height: 20px
+
 
     &__design
         margin-top: 36px
         margin-left: 216px
-        display: flex
+        display: grid
         //align-items: center
-        justify-content: center
-        gap: 45px
+        //justify-content: center
+        column-gap: 45px
+        @media screen and (max-width: $tabletS)
+            margin-left: 0
 
         .design
             &__image
+                grid-column: 1/2
+                grid-row: 1/3
                 width: 415px
                 height: auto
+                @media screen and (max-width: $tabletS)
+                    grid-row: 2/3
+                    place-self: center
+                    margin-bottom: 54px
+                    width: 330px
 
             &__text
+                grid-column: 2/3
+                grid-row: 1/2
+                place-self: center
                 font-family: "Thirsty Caps"
                 font-size: 75px
                 line-height: 67px
                 text-align: center
                 letter-spacing: 0.04em
                 max-width: 359px
-                margin-top: 40px
-                margin-bottom: 64px
+                @media screen and (max-width: $tabletS)
+                    grid-column: 1/2
+                    margin: 0
+                    margin-bottom: 20px
+                    font-size: 55px
+                    line-height: 49px
 
-            &__content
-                position: relative
-                z-index: 10
-                display: flex
-                flex-direction: column
-                align-items: center
 
             &__btn
+                grid-column: 2/3
+                grid-row: 2/3
+                place-self: start center
                 padding: 7px 30px
+                z-index: 10
+                @media screen and (max-width: $tabletS)
+                    grid-column: 1/2
+                    grid-row: 3/4
+                    place-self: center
+                    font-size: 30px
+                    line-height: 36px
