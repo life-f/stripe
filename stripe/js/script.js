@@ -1,10 +1,24 @@
 $(document).ready(function () {
 
-        $(".wrapper").addClass("active")
+        $("#years-popup").addClass("active")
 
         $("#yes").click(() => {
-            $(".wrapper").removeClass("active")
+            $("#years-popup").removeClass("active")
         })
+
+        $('.products__btn').on('click', function () {
+            let id = $(this).attr('data-for')
+            $('#'+id).addClass('active')
+        })
+
+        $('.popup').on('click', function (event){
+            event.stopPropagation()
+        })
+
+        $('.wrapper-to-close').on('click', function(){
+            $(this).removeClass('active')
+        })
+
 
         $(".menu-burger").click(() => {
             if ($(".menu-burger").hasClass("active")) {
@@ -173,6 +187,7 @@ $(document).ready(function () {
         /**
          * Форма для заявки
          */
+
         // $('.btn').on("click", function () {
         //     $('.pop-up__card').addClass('active')
         //     $('.pop-up__wall').addClass('active')
@@ -182,5 +197,6 @@ $(document).ready(function () {
         //     $('.pop-up__card').removeClass('active')
         //     $('.pop-up__wall').removeClass('active')
         // })
+
     }
 )

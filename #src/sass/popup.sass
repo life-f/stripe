@@ -16,14 +16,23 @@
 .popup
     place-self: center
     margin: auto
-    padding: 130px 160px
-    background-color: $black-op80
-    opacity: 0.95
-    color: $white
+
     width: max-content
     display: flex
     flex-direction: column
     align-items: center
+
+    &-years
+        padding: 130px 160px
+        background-color: $black-op80
+        opacity: 0.95
+        color: $white
+
+    &-product
+        background: white
+        padding: 44px 70px 22px 25px
+        position: relative
+
 
     &__image
         @media screen and (max-width: $tabletS)

@@ -288,10 +288,6 @@ a:hover {
 .popup {
   place-self: center;
   margin: auto;
-  padding: 130px 160px;
-  background-color: rgba(35, 35, 35, 0.95);
-  opacity: 0.95;
-  color: white;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -305,6 +301,19 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.popup-years {
+  padding: 130px 160px;
+  background-color: rgba(35, 35, 35, 0.95);
+  opacity: 0.95;
+  color: white;
+}
+
+.popup-product {
+  background: white;
+  padding: 44px 70px 22px 25px;
+  position: relative;
 }
 
 .popup__title {
