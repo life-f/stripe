@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+        $(".wrapper").addClass("active")
 
         var parallaxItem = $('.image-flakes img')[0];
         new simpleParallax(parallaxItem, {
@@ -117,7 +118,8 @@ $(document).ready(function () {
             prevArrow: '<div class="arrow-prev first__arrow arrow"></div>',
             nextArrow: '<div class="arrow-next first__arrow arrow"></div>',
             slidesToShow: 1,
-            infinite: false,
+            infinite: true,
+            autoplay: true,
             responsive: [
                 {
                     breakpoint: 560,

@@ -1,0 +1,50 @@
+@import "base"
+.wrapper
+    display: none
+
+    &.active
+        display: block
+        position: fixed
+        top: 0
+        left: 0
+        width: 100vw
+        height: 100vh
+        overflow: hidden
+        background-color: $black-op50
+        z-index: 100
+
+.popup
+    margin: auto
+    padding: 130px 160px
+    background-color: $black-op80
+    opacity: 0.95
+    color: $white
+    width: max-content
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    &__title
+        margin-bottom: 18px
+        font-size: 40px
+        line-height: 40px
+        font-weight: 700
+
+    &__subtitle
+        margin-bottom: 25px
+        font-size: 20px
+        line-height: 20px
+        font-weight: 500
+
+    &__btns
+        display: flex
+        justify-content: center
+        gap: 37px
+
+        .btn
+            font-size: 25px
+            line-height: 30px
+            font-weight: 600
+
+            .content
+                padding: 16px 32px

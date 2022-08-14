@@ -268,80 +268,31 @@ a:hover {
   margin-bottom: 0;
 }
 
-.about {
-  position: relative;
-  background-image: url("../img/backgrounds/3.webp");
+.wrapper {
+  display: none;
 }
 
-.about .container {
-  position: relative;
-  padding: 68px 188px;
-  overflow: hidden;
-}
-
-.about h2 {
-  margin: 0 auto 40px;
+.wrapper.active {
   display: block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  border-bottom: 3px solid black;
-}
-
-.about .img-left {
-  position: absolute;
+  position: fixed;
+  top: 0;
   left: 0;
-  bottom: -122px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
 }
 
-.about .back-img {
-  z-index: 0;
-  top: -94px;
-  left: 639px;
-  width: 1083px;
-}
-
-.about__text {
-  margin-bottom: 10px;
-  font-family: "Open Sans";
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
-  letter-spacing: -0.02em;
-  text-align: center;
-}
-
-.about__design {
-  margin-top: 36px;
-  margin-left: 216px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 45px;
-}
-
-.about__design .design__image {
-  width: 415px;
-  height: auto;
-}
-
-.about__design .design__text {
-  font-family: "Thirsty Caps";
-  font-size: 75px;
-  line-height: 67px;
-  text-align: center;
-  letter-spacing: 0.04em;
-  max-width: 359px;
-  margin-top: 40px;
-  margin-bottom: 64px;
-}
-
-.about__design .design__content {
-  position: relative;
-  z-index: 10;
+.popup {
+  margin: auto;
+  padding: 130px 160px;
+  background-color: rgba(35, 35, 35, 0.95);
+  opacity: 0.95;
+  color: white;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -354,8 +305,38 @@ a:hover {
           align-items: center;
 }
 
-.about__design .design__btn {
-  padding: 7px 30px;
+.popup__title {
+  margin-bottom: 18px;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.popup__subtitle {
+  margin-bottom: 25px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.popup__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 37px;
+}
+
+.popup__btns .btn {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.popup__btns .btn .content {
+  padding: 16px 32px;
 }
 @supports (-webkit-appearance:none){
 
