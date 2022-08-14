@@ -1,27 +1,26 @@
 $(document).ready(function () {
 
 
-    var parallaxItem = $('.image-flakes img')[0];
-    new simpleParallax(parallaxItem, {
-        'overflow': true,
-        'scale' : 1.3,
-        'delay': 0,
-    });
+        var parallaxItem = $('.image-flakes img')[0];
+        new simpleParallax(parallaxItem, {
+            'overflow': true,
+            'scale': 1.3,
+            'delay': 0,
+        });
 
-    var parallaxItem = $('.image-pine img')[0];
-    new simpleParallax(parallaxItem, {
-        'overflow': true,
-        'scale' : 1.5,
-        'delay': 0,
-    });
+        var parallaxItem = $('.image-pine img')[0];
+        new simpleParallax(parallaxItem, {
+            'overflow': true,
+            'scale': 1.5,
+            'delay': 0,
+        });
 
-    var parallaxItem = $('.image-hello img')[0];
-    new simpleParallax(parallaxItem, {
-        'overflow': true,
-        'delay': 0,
-        'orientation': 'down'
-    });
-
+        var parallaxItem = $('.image-hello img')[0];
+        new simpleParallax(parallaxItem, {
+            'overflow': true,
+            'delay': 0,
+            'orientation': 'down'
+        });
 
 
         /**
@@ -70,31 +69,30 @@ $(document).ready(function () {
          * Определение слайдеров
          */
         // if ($(window).width() <= '560') {
-            $('.first__slider').slick({
-                variableWidth: false,
-                variableHeight: false,
-                // autoplay: true,
-                // centerMode: true,
-                dots: true,
-                dotsClass: "slick-dots first__dots",
-                arrows: true,
-                prevArrow: '<div class="arrow-prev first__arrow arrow"></div>',
-                nextArrow: '<div class="arrow-next first__arrow arrow"></div>',
-                slidesToShow: 1,
-                infinite: true,
-                responsive: [
-                    {
-                        breakpoint: 560,
-                        settings: {
-
-                            variableWidth: false,
-                            slidesToShow: 1,
-                            arrows: false,
-                            dots: true,
-                        }
+        $('.first__slider').slick({
+            variableWidth: false,
+            variableHeight: false,
+            // autoplay: true,
+            // centerMode: true,
+            dots: true,
+            dotsClass: "slick-dots first__dots",
+            arrows: true,
+            prevArrow: '<div class="arrow-prev first__arrow arrow"></div>',
+            nextArrow: '<div class="arrow-next first__arrow arrow"></div>',
+            slidesToShow: 1,
+            infinite: true,
+            responsive: [
+                {
+                    breakpoint: 560,
+                    settings: {
+                        variableWidth: false,
+                        slidesToShow: 1,
+                        arrows: false,
+                        dots: true,
                     }
-                ]
-            });
+                }
+            ]
+        });
         // } else if ($(window).width() > '560') {
         //     $('.first__slider').slick({
         //         variableWidth: false,
@@ -111,35 +109,27 @@ $(document).ready(function () {
         //     });
         // }
 
-        // if ($(window).width() <= '568') {
-        //     $('.reviews__slider').slick({
-        //         variableWidth: false,
-        //         dots: true,
-        //         arrows: false,
-        //         infinite: false,
-        //         slidesToShow: 1,
-        //     });
-        // } else if ($(window).width() <= '1024') {
-        //     $('.reviews__slider').slick({
-        //         variableWidth: false,
-        //         dots: true,
-        //         arrows: false,
-        //         prevArrow: '<div class="arrow-prev arrow"></div>',
-        //         nextArrow: '<div class="arrow-next arrow"></div>',
-        //         infinite: false,
-        //         slidesToShow: 2,
-        //     });
-        // } else if ($(window).width() > '1024') {
-        //     $('.reviews__slider').slick({
-        //         variableWidth: false,
-        //         dots: true,
-        //         arrows: true,
-        //         prevArrow: '<div class="arrow-prev arrow"></div>',
-        //         nextArrow: '<div class="arrow-next arrow"></div>',
-        //         infinite: false,
-        //         slidesToShow: 3,
-        //     });
-        // }
+        $('.how__slider').slick({
+            variableWidth: false,
+            dots: true,
+            dotsClass: "slick-dots how__dots",
+            arrows: true,
+            prevArrow: '<div class="arrow-prev first__arrow arrow"></div>',
+            nextArrow: '<div class="arrow-next first__arrow arrow"></div>',
+            slidesToShow: 1,
+            infinite: false,
+            responsive: [
+                {
+                    breakpoint: 560,
+                    settings: {
+                        variableWidth: false,
+                        slidesToShow: 1,
+                        arrows: false,
+                        dots: true,
+                    }
+                }
+            ]
+        });
 
         /**
          * Форма для заявки

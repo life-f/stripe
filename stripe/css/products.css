@@ -1,4 +1,6 @@
-
+.products {
+  background-image: url("../img/backgrounds/2.webp");
+}
 @supports (-webkit-appearance:none){
 
 }

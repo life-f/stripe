@@ -11,7 +11,9 @@ $desktopS: 1440px
 /* Цвета */
 $white: rgba(255, 255, 255, 1)
 $black: rgba(0, 0, 0, 1)
-$light-grey: rgba(214, 212, 212, 1)
+$black-op50: rgba(0, 0, 0, 0.5)
+$light-grey: rgb(214, 212, 212)
+$grey: #676767
 $yellow: #FAE420
 $red-purple: #AA0250
 
@@ -78,7 +80,17 @@ $red-purple: #AA0250
     url('../fonts/Gilroy/Gilroy-Bold.ttf') format('truetype')
     font-weight: bold
     font-style: normal
-//
+
+@font-face
+    font-family: 'Gilroy'
+    src: url('../fonts/Gilroy/Gilroy-ExtraBold.eot')
+    src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
+    url('../fonts/Gilroy/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy/Gilroy-ExtraBold.woff') format('woff'),
+    url('../fonts/Gilroy/Gilroy-ExtraBold.ttf') format('truetype')
+    font-weight: 800
+    font-style: normal
+
 html
     overflow-x: hidden
 
@@ -89,7 +101,7 @@ body
     font-size: 20px
     line-height: 20px
     color: $black
-    //overflow: hidden
+//overflow: hidden
 //@media screen and (max-width: $tabletS)
     font-size: 18px
     line-height: 21px
