@@ -99,6 +99,8 @@ h1,
   font-family: "Spray Letters";
   font-size: 90px;
   line-height: 104px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FAE420;
 }
@@ -110,6 +112,7 @@ h2,
   font-family: "Thirsty Caps";
   font-size: 70px;
   line-height: 62px;
+  font-weight: 400;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -178,6 +181,10 @@ button-black:hover,
   color: black;
 }
 
+p {
+  margin: 0;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -240,14 +247,14 @@ a:hover {
 
 .how {
   position: relative;
-  padding-top: 63px;
+  padding: 64px 0 19px;
   color: white;
   background-image: url("../img/backgrounds/1.webp");
 }
 
 .how .back-img {
   width: 313px;
-  top: -5px;
+  top: -20px;
   left: -10px;
   -webkit-transform: scaleX(-1);
       -ms-transform: scaleX(-1);
@@ -259,19 +266,32 @@ a:hover {
 }
 
 .how__slider {
-  margin-top: -50px;
+  margin-top: -45px;
 }
 
 .how__slider.slick-dotted.slick-slider {
   margin-bottom: 0;
 }
 
+.how__slider .arrow {
+  top: 42%;
+}
+
+.how__slider .arrow.arrow-next {
+  right: 76px;
+}
+
+.how__slider .arrow.arrow-prev {
+  left: 76px;
+}
+
 .how__dots {
   z-index: 10;
-  bottom: 15px;
+  bottom: 0px;
 }
 
 .how__dots li {
+  margin: 0 2px;
   width: 16px;
   height: 16px;
   background-color: #676767;
@@ -296,9 +316,11 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 70px;
 }
 
 .how .slide__image {
+  margin-left: -160px;
   width: 433px;
   height: auto;
 }
@@ -306,7 +328,7 @@ a:hover {
 .how .slide__title {
   display: inline-block;
   padding: 5px;
-  margin-bottom: 30px;
+  margin: 30px 0;
   font-family: Gilroy;
   font-size: 30px;
   line-height: 38px;
@@ -317,8 +339,8 @@ a:hover {
 .how .slide__desc {
   max-width: 270px;
   font-family: Gilroy;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 25px;
+  line-height: 30px;
   background-color: rgba(0, 0, 0, 0.5);
 }
 @supports (-webkit-appearance:none){

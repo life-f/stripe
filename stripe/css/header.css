@@ -99,6 +99,8 @@ h1,
   font-family: "Spray Letters";
   font-size: 90px;
   line-height: 104px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FAE420;
 }
@@ -110,6 +112,7 @@ h2,
   font-family: "Thirsty Caps";
   font-size: 70px;
   line-height: 62px;
+  font-weight: 400;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -176,6 +179,10 @@ button-black:hover,
 .btn-black:hover {
   background-color: white;
   color: black;
+}
+
+p {
+  margin: 0;
 }
 
 a {
@@ -247,8 +254,8 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 71px;
-  padding: 26px 50px;
+  gap: 95px;
+  padding: 20px 50px 20px 64px;
   color: white;
   font-weight: 600;
   font-size: 18px;
@@ -279,11 +286,20 @@ a:hover {
   gap: 30px;
 }
 
-.header__menu .menu-item a {
+.header__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header a {
   opacity: 0.6;
 }
 
-.header__menu .menu-item a:hover {
+.header a:hover {
   opacity: 1;
 }
 @supports (-webkit-appearance:none){

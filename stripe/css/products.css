@@ -99,6 +99,8 @@ h1,
   font-family: "Spray Letters";
   font-size: 90px;
   line-height: 104px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FAE420;
 }
@@ -110,6 +112,7 @@ h2,
   font-family: "Thirsty Caps";
   font-size: 70px;
   line-height: 62px;
+  font-weight: 400;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -176,6 +179,10 @@ button-black:hover,
 .btn-black:hover {
   background-color: white;
   color: black;
+}
+
+p {
+  margin: 0;
 }
 
 a {
@@ -261,14 +268,25 @@ a:hover {
 }
 
 .products__banner-first {
-  top: -80px;
+  top: -85px;
+  width: 377px;
+}
+
+.products__banner-first img {
+  width: 100%;
 }
 
 .products__banner-second {
   top: -57px;
+  width: 377px;
+}
+
+.products__banner-second img {
+  width: 100%;
 }
 
 .products__title {
+  margin-bottom: 3px;
   font-family: "Open Sans";
   font-size: 30px;
   line-height: 41px;
@@ -291,6 +309,7 @@ a:hover {
   width: -moz-fit-content !important;
   width: fit-content !important;
   background-color: #AFAFAF;
+  border-radius: 4px;
 }
 
 .products__power .power-circle {
@@ -381,17 +400,18 @@ a:hover {
 }
 
 .products__slider .slick-list {
+  padding: 0 40px !important;
   height: 330px;
 }
 
 .products__slider.slick-dotted.slick-slider {
-  padding-top: 10px;
-  padding-bottom: 65px;
+  padding-top: 19px;
+  padding-bottom: 37px;
 }
 
 .products__dots {
   z-index: 10;
-  bottom: 15px;
+  bottom: 8px;
 }
 
 .products__dots li {
@@ -402,7 +422,7 @@ a:hover {
 }
 
 .products__dots li.slick-active {
-  background-color: white;
+  background-color: black;
 }
 
 .products__dots li button {

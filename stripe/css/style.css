@@ -14,6 +14,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 @font-face {
   font-family: "Spray Letters";
   src: url("../fonts/SprayLetters.otf") format("opentype");
@@ -106,6 +107,8 @@ h1,
   font-family: "Spray Letters";
   font-size: 90px;
   line-height: 104px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FAE420;
 }
@@ -117,6 +120,7 @@ h2,
   font-family: "Thirsty Caps";
   font-size: 70px;
   line-height: 62px;
+  font-weight: 400;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -183,6 +187,10 @@ button-black:hover,
 .btn-black:hover {
   background-color: white;
   color: black;
+}
+
+p {
+  margin: 0;
 }
 
 a {
@@ -341,6 +349,8 @@ h1,
   font-family: "Spray Letters";
   font-size: 90px;
   line-height: 104px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FAE420;
 }
@@ -352,6 +362,7 @@ h2,
   font-family: "Thirsty Caps";
   font-size: 70px;
   line-height: 62px;
+  font-weight: 400;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -418,6 +429,10 @@ button-black:hover,
 .btn-black:hover {
   background-color: white;
   color: black;
+}
+
+p {
+  margin: 0;
 }
 
 a {
@@ -489,8 +504,8 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 71px;
-  padding: 26px 50px;
+  gap: 95px;
+  padding: 20px 50px 20px 64px;
   color: white;
   font-weight: 600;
   font-size: 18px;
@@ -521,11 +536,20 @@ a:hover {
   gap: 30px;
 }
 
-.header__menu .menu-item a {
+.header__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header a {
   opacity: 0.6;
 }
 
-.header__menu .menu-item a:hover {
+.header a:hover {
   opacity: 1;
 }
 
@@ -625,6 +649,8 @@ h1,
   font-family: "Spray Letters";
   font-size: 90px;
   line-height: 104px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FAE420;
 }
@@ -636,6 +662,7 @@ h2,
   font-family: "Thirsty Caps";
   font-size: 70px;
   line-height: 62px;
+  font-weight: 400;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -702,6 +729,10 @@ button-black:hover,
 .btn-black:hover {
   background-color: white;
   color: black;
+}
+
+p {
+  margin: 0;
 }
 
 a {
@@ -785,13 +816,13 @@ a:hover {
 }
 
 .first .slide {
-  height: 676px;
+  height: 674px;
   background-position: center;
   background-size: cover;
 }
 
 .first .slide .container {
-  padding: 60px 34px;
+  padding: 58px 34px 0px;
 }
 
 .first .slide-who {
@@ -808,6 +839,8 @@ a:hover {
 
 .first .slide-who .slide__title {
   text-align: center;
+  margin-top: -68px;
+  margin-left: 69px;
 }
 
 .first .slide-who .slide__images {
@@ -826,14 +859,14 @@ a:hover {
 }
 
 .first .slide-who .slide__images .image-hello {
-  width: 300px;
+  width: 348px;
   grid-column: 3/6;
   grid-row: 1/4;
   place-self: start end;
 }
 
 .first .slide-who .slide__images .image-flakes {
-  width: 483px;
+  width: 410px;
   height: auto;
   grid-column: 1/6;
   grid-row: 1/4;
@@ -842,9 +875,10 @@ a:hover {
 .first .slide-who .slide__images .image-pine {
   grid-column: 3/6;
   grid-row: 2/6;
+  margin-top: -30px;
   width: 430px;
   height: auto;
-  place-self: end;
+  place-self: center;
 }
 
 .first .slide-shop {
@@ -880,14 +914,15 @@ a:hover {
 
 .first__dots {
   z-index: 10;
-  bottom: 60px;
+  bottom: 95px;
 }
 
 .first__dots li {
-  width: 36px;
-  height: 36px;
+  width: 25px;
+  height: 25px;
   background-color: white;
   border-radius: 50%;
+  margin: 0 13px;
 }
 
 .first__dots li.slick-active {
@@ -914,11 +949,11 @@ a:hover {
 }
 
 .first__arrow.arrow-prev {
-  left: 5%;
+  left: 34px;
 }
 
 .first__arrow.arrow-next {
-  right: 5%;
+  right: 34px;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -927,83 +962,6 @@ a:hover {
 .first__arrow:hover {
   opacity: 1;
   cursor: pointer;
-}
-
-.about {
-  position: relative;
-  background-image: url("../img/backgrounds/3.webp");
-}
-
-.about .container {
-  position: relative;
-  padding: 65px 144px;
-  overflow: hidden;
-}
-
-.about h2 {
-  text-decoration: underline;
-}
-
-.about .img-left {
-  position: absolute;
-  left: 0;
-  bottom: -122px;
-}
-
-.about .back-img {
-  z-index: 0;
-  top: -49px;
-  left: 639px;
-  width: 1083px;
-}
-
-.about__text {
-  font-family: "Open Sans";
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-}
-
-.about__design {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 41px;
-}
-
-.about__design .design__image {
-  width: 454px;
-  height: auto;
-}
-
-.about__design .design__text {
-  font-family: "Thirsty Caps";
-  font-size: 75px;
-  line-height: 67px;
-  text-align: center;
-  letter-spacing: 0.04em;
-  max-width: 359px;
-  margin-top: 40px;
-  margin-bottom: 64px;
-}
-
-.about__design .design__content {
-  position: relative;
-  z-index: 10;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 /* Экраны */
@@ -1102,6 +1060,8 @@ h1,
   font-family: "Spray Letters";
   font-size: 90px;
   line-height: 104px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FAE420;
 }
@@ -1113,6 +1073,7 @@ h2,
   font-family: "Thirsty Caps";
   font-size: 70px;
   line-height: 62px;
+  font-weight: 400;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -1181,6 +1142,342 @@ button-black:hover,
   color: black;
 }
 
+p {
+  margin: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.yellow {
+  color: #FAE420;
+}
+
+.f-gilroy {
+  font-family: 'Gilroy';
+}
+
+.fs-25 {
+  font-size: 25px;
+  line-height: 31px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-23 {
+  font-size: 23px;
+}
+
+.lh-20 {
+  line-height: 20px;
+}
+
+.lh-26 {
+  line-height: 26px;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.back-img {
+  position: absolute;
+  opacity: 0.15;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.about {
+  position: relative;
+  background-image: url("../img/backgrounds/3.webp");
+}
+
+.about .container {
+  position: relative;
+  padding: 68px 188px;
+  overflow: hidden;
+}
+
+.about h2 {
+  margin: 0 auto 40px;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 3px solid black;
+}
+
+.about .img-left {
+  position: absolute;
+  left: 0;
+  bottom: -122px;
+}
+
+.about .back-img {
+  z-index: 0;
+  top: -94px;
+  left: 639px;
+  width: 1083px;
+}
+
+.about__text {
+  margin-bottom: 10px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.about__design {
+  margin-top: 36px;
+  margin-left: 216px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 45px;
+}
+
+.about__design .design__image {
+  width: 415px;
+  height: auto;
+}
+
+.about__design .design__text {
+  font-family: "Thirsty Caps";
+  font-size: 75px;
+  line-height: 67px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  max-width: 359px;
+  margin-top: 40px;
+  margin-bottom: 64px;
+}
+
+.about__design .design__content {
+  position: relative;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__design .design__btn {
+  padding: 7px 30px;
+}
+
+/* Экраны */
+
+/* Цвета */
+
+@font-face {
+  font-family: "Spray Letters";
+  src: url("../fonts/SprayLetters.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Thirsty Caps";
+  src: url("../fonts/thirsty_caps/thirsty_caps/ThirstyCaps.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy/Gilroy-Regular.eot");
+  src: local("Gilroy Regular"), local("Gilroy-Regular"), url("../fonts/Gilroy/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy/Gilroy-Medium.eot");
+  src: local("Gilroy Medium"), local("Gilroy-Medium"), url("../fonts/Gilroy/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy/Gilroy-SemiBold.eot");
+  src: local("Gilroy SemiBold"), local("Gilroy-SemiBold"), url("../fonts/Gilroy/Gilroy-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-SemiBold.woff") format("woff"), url("../fonts/Gilroy/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy/Gilroy-Bold.eot");
+  src: local("Gilroy Bold"), local("Gilroy-Bold"), url("../fonts/Gilroy/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy/Gilroy-ExtraBold.eot");
+  src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"), url("../fonts/Gilroy/Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-ExtraBold.woff") format("woff"), url("../fonts/Gilroy/Gilroy-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: black;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+.h1 {
+  font-family: "Spray Letters";
+  font-size: 90px;
+  line-height: 104px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FAE420;
+}
+
+h2,
+.h2 {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-family: "Thirsty Caps";
+  font-size: 70px;
+  line-height: 62px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+section {
+  background-size: cover;
+  background-position: center;
+}
+
+button,
+.btn {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-family: "Inter";
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  -webkit-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  text-align: center;
+}
+
+button:hover,
+.btn:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button-white,
+.btn-white {
+  background-color: white;
+  color: black;
+}
+
+button-white:hover,
+.btn-white:hover {
+  background-color: #AA0250;
+  color: white;
+}
+
+button-red,
+.btn-red {
+  background-color: #AA0250;
+  color: white;
+}
+
+button-red:hover,
+.btn-red:hover {
+  background-color: white;
+  color: black;
+}
+
+button-black,
+.btn-black {
+  background-color: black;
+  color: white;
+}
+
+button-black:hover,
+.btn-black:hover {
+  background-color: white;
+  color: black;
+}
+
+p {
+  margin: 0;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -1247,17 +1544,17 @@ a:hover {
 }
 
 .why .container {
-  padding: 82px 160px 64px;
+  padding: 82px 160px 60px;
 }
 
 .why__phrase {
+  margin-left: 22px;
   font-family: "Thirsty Caps";
   font-size: 90px;
   line-height: 80px;
-  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  font-weight: 400;
   text-align: center;
   color: #FAE420;
-  letter-spacing: 0.03em;
 }
 
 .why__items {
@@ -1265,7 +1562,7 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   gap: 4px;
-  margin-bottom: 65px;
+  margin-bottom: 74px;
 }
 
 .why__items .item {
@@ -1284,12 +1581,13 @@ a:hover {
 }
 
 .why__items .item__icon {
-  margin-bottom: 50px;
+  margin-bottom: 47px;
   height: 80px;
 }
 
 .why__items .item__title {
-  margin-bottom: 15px;
+  max-width: 205px;
+  margin-bottom: 8px;
   font-weight: 700;
   font-size: 20px;
   line-height: 25px;
@@ -1399,6 +1697,8 @@ h1,
   font-family: "Spray Letters";
   font-size: 90px;
   line-height: 104px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FAE420;
 }
@@ -1410,6 +1710,7 @@ h2,
   font-family: "Thirsty Caps";
   font-size: 70px;
   line-height: 62px;
+  font-weight: 400;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -1476,6 +1777,10 @@ button-black:hover,
 .btn-black:hover {
   background-color: white;
   color: black;
+}
+
+p {
+  margin: 0;
 }
 
 a {
@@ -1561,14 +1866,25 @@ a:hover {
 }
 
 .products__banner-first {
-  top: -80px;
+  top: -85px;
+  width: 377px;
+}
+
+.products__banner-first img {
+  width: 100%;
 }
 
 .products__banner-second {
   top: -57px;
+  width: 377px;
+}
+
+.products__banner-second img {
+  width: 100%;
 }
 
 .products__title {
+  margin-bottom: 3px;
   font-family: "Open Sans";
   font-size: 30px;
   line-height: 41px;
@@ -1591,6 +1907,7 @@ a:hover {
   width: -moz-fit-content !important;
   width: fit-content !important;
   background-color: #AFAFAF;
+  border-radius: 4px;
 }
 
 .products__power .power-circle {
@@ -1681,17 +1998,18 @@ a:hover {
 }
 
 .products__slider .slick-list {
+  padding: 0 40px !important;
   height: 330px;
 }
 
 .products__slider.slick-dotted.slick-slider {
-  padding-top: 10px;
-  padding-bottom: 65px;
+  padding-top: 19px;
+  padding-bottom: 37px;
 }
 
 .products__dots {
   z-index: 10;
-  bottom: 15px;
+  bottom: 8px;
 }
 
 .products__dots li {
@@ -1702,7 +2020,7 @@ a:hover {
 }
 
 .products__dots li.slick-active {
-  background-color: white;
+  background-color: black;
 }
 
 .products__dots li button {
@@ -1825,6 +2143,8 @@ h1,
   font-family: "Spray Letters";
   font-size: 90px;
   line-height: 104px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FAE420;
 }
@@ -1836,6 +2156,7 @@ h2,
   font-family: "Thirsty Caps";
   font-size: 70px;
   line-height: 62px;
+  font-weight: 400;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -1904,6 +2225,10 @@ button-black:hover,
   color: black;
 }
 
+p {
+  margin: 0;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -1966,14 +2291,14 @@ a:hover {
 
 .how {
   position: relative;
-  padding-top: 63px;
+  padding: 64px 0 19px;
   color: white;
   background-image: url("../img/backgrounds/1.webp");
 }
 
 .how .back-img {
   width: 313px;
-  top: -5px;
+  top: -20px;
   left: -10px;
   -webkit-transform: scaleX(-1);
       -ms-transform: scaleX(-1);
@@ -1985,19 +2310,32 @@ a:hover {
 }
 
 .how__slider {
-  margin-top: -50px;
+  margin-top: -45px;
 }
 
 .how__slider.slick-dotted.slick-slider {
   margin-bottom: 0;
 }
 
+.how__slider .arrow {
+  top: 42%;
+}
+
+.how__slider .arrow.arrow-next {
+  right: 76px;
+}
+
+.how__slider .arrow.arrow-prev {
+  left: 76px;
+}
+
 .how__dots {
   z-index: 10;
-  bottom: 15px;
+  bottom: 0px;
 }
 
 .how__dots li {
+  margin: 0 2px;
   width: 16px;
   height: 16px;
   background-color: #676767;
@@ -2022,9 +2360,11 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 70px;
 }
 
 .how .slide__image {
+  margin-left: -160px;
   width: 433px;
   height: auto;
 }
@@ -2032,7 +2372,7 @@ a:hover {
 .how .slide__title {
   display: inline-block;
   padding: 5px;
-  margin-bottom: 30px;
+  margin: 30px 0;
   font-family: Gilroy;
   font-size: 30px;
   line-height: 38px;
@@ -2043,8 +2383,8 @@ a:hover {
 .how .slide__desc {
   max-width: 270px;
   font-family: Gilroy;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 25px;
+  line-height: 30px;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -2144,6 +2484,8 @@ h1,
   font-family: "Spray Letters";
   font-size: 90px;
   line-height: 104px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FAE420;
 }
@@ -2155,6 +2497,7 @@ h2,
   font-family: "Thirsty Caps";
   font-size: 70px;
   line-height: 62px;
+  font-weight: 400;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -2223,6 +2566,10 @@ button-black:hover,
   color: black;
 }
 
+p {
+  margin: 0;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -2284,7 +2631,7 @@ a:hover {
 }
 
 .partner {
-  padding: 28px 0 61px;
+  padding: 28px 0 44px;
   background-image: url("../img/backgrounds/3.webp");
 }
 
@@ -2292,6 +2639,7 @@ a:hover {
   font-family: "Spray Letters";
   font-size: 40px;
   line-height: 40px;
+  letter-spacing: 0.0em;
 }
 
 .partner__subtitle {
@@ -2309,13 +2657,18 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 170px;
+  gap: 320px;
 }
 
 .partner__contacts .contact {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-size: 18px;
   line-height: 22px;
+}
+
+.partner__contacts .contact__icon svg {
+  width: 22px;
+  height: auto;
 }
 
 /* Экраны */
@@ -2414,6 +2767,8 @@ h1,
   font-family: "Spray Letters";
   font-size: 90px;
   line-height: 104px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FAE420;
 }
@@ -2425,6 +2780,7 @@ h2,
   font-family: "Thirsty Caps";
   font-size: 70px;
   line-height: 62px;
+  font-weight: 400;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -2491,6 +2847,10 @@ button-black:hover,
 .btn-black:hover {
   background-color: white;
   color: black;
+}
+
+p {
+  margin: 0;
 }
 
 a {
@@ -2573,7 +2933,7 @@ a:hover {
 }
 
 .footer__title {
-  margin-bottom: 21px;
+  margin-bottom: 15px;
 }
 
 .footer__social {
@@ -2586,9 +2946,20 @@ a:hover {
   gap: 40px;
 }
 
-.footer__social .social-item {
-  width: 60px;
+.footer__social .social-item svg {
+  width: 50px;
   height: auto;
+}
+
+.alert {
+  padding: 35px 0 38px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), color-stop(114.44%, rgba(40, 40, 40, 0.136)));
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 0%, rgba(40, 40, 40, 0.136) 114.44%);
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.8) 0%, rgba(40, 40, 40, 0.136) 114.44%);
+  color: white;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
 }
 @supports (-webkit-appearance:none){
 .first__arrow{background-image:url("../img/arrow.svg")}

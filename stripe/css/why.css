@@ -99,6 +99,8 @@ h1,
   font-family: "Spray Letters";
   font-size: 90px;
   line-height: 104px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FAE420;
 }
@@ -110,6 +112,7 @@ h2,
   font-family: "Thirsty Caps";
   font-size: 70px;
   line-height: 62px;
+  font-weight: 400;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -178,6 +181,10 @@ button-black:hover,
   color: black;
 }
 
+p {
+  margin: 0;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -244,17 +251,17 @@ a:hover {
 }
 
 .why .container {
-  padding: 82px 160px 64px;
+  padding: 82px 160px 60px;
 }
 
 .why__phrase {
+  margin-left: 22px;
   font-family: "Thirsty Caps";
   font-size: 90px;
   line-height: 80px;
-  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  font-weight: 400;
   text-align: center;
   color: #FAE420;
-  letter-spacing: 0.03em;
 }
 
 .why__items {
@@ -262,7 +269,7 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   gap: 4px;
-  margin-bottom: 65px;
+  margin-bottom: 74px;
 }
 
 .why__items .item {
@@ -281,12 +288,13 @@ a:hover {
 }
 
 .why__items .item__icon {
-  margin-bottom: 50px;
+  margin-bottom: 47px;
   height: 80px;
 }
 
 .why__items .item__title {
-  margin-bottom: 15px;
+  max-width: 205px;
+  margin-bottom: 8px;
   font-weight: 700;
   font-size: 20px;
   line-height: 25px;

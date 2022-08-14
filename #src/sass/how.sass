@@ -1,13 +1,13 @@
 @import "base"
 .how
     position: relative
-    padding-top: 63px
+    padding: 64px 0 19px
     color: $white
     background-image: url("../img/backgrounds/1.webp")
 
     .back-img
         width: 313px
-        top: -5px
+        top: -20px
         left: -10px
         transform: scaleX(-1)
 
@@ -15,16 +15,26 @@
         margin-bottom: 0
 
     &__slider
-        margin-top: -50px
+        margin-top: -45px
 
         &.slick-dotted.slick-slider
             margin-bottom: 0
 
+        & .arrow
+            top: 42%
+
+            &.arrow-next
+                right: 76px
+
+            &.arrow-prev
+                left: 76px
+
     &__dots
         z-index: 10
-        bottom: 15px
+        bottom: 0px
 
         li
+            margin: 0 2px
             width: 16px
             height: 16px
             background-color: $dark-grey
@@ -40,15 +50,18 @@
         display: flex
         justify-content: center
         align-items: center
+        gap: 70px
+        //padding: 0 250px
 
         &__image
+            margin-left: -160px
             width: 433px
             height: auto
 
         &__title
             display: inline-block
             padding: 5px
-            margin-bottom: 30px
+            margin: 30px 0
             font-family: Gilroy
             font-size: 30px
             line-height: 38px
@@ -58,6 +71,6 @@
         &__desc
             max-width: 270px
             font-family: Gilroy
-            font-size: 18px
-            line-height: 25px
+            font-size: 25px
+            line-height: 30px
             background-color: $black-op50

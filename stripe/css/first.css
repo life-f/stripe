@@ -99,6 +99,8 @@ h1,
   font-family: "Spray Letters";
   font-size: 90px;
   line-height: 104px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FAE420;
 }
@@ -110,6 +112,7 @@ h2,
   font-family: "Thirsty Caps";
   font-size: 70px;
   line-height: 62px;
+  font-weight: 400;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -176,6 +179,10 @@ button-black:hover,
 .btn-black:hover {
   background-color: white;
   color: black;
+}
+
+p {
+  margin: 0;
 }
 
 a {
@@ -259,13 +266,13 @@ a:hover {
 }
 
 .first .slide {
-  height: 676px;
+  height: 674px;
   background-position: center;
   background-size: cover;
 }
 
 .first .slide .container {
-  padding: 60px 34px;
+  padding: 58px 34px 0px;
 }
 
 .first .slide-who {
@@ -282,6 +289,8 @@ a:hover {
 
 .first .slide-who .slide__title {
   text-align: center;
+  margin-top: -68px;
+  margin-left: 69px;
 }
 
 .first .slide-who .slide__images {
@@ -300,14 +309,14 @@ a:hover {
 }
 
 .first .slide-who .slide__images .image-hello {
-  width: 300px;
+  width: 348px;
   grid-column: 3/6;
   grid-row: 1/4;
   place-self: start end;
 }
 
 .first .slide-who .slide__images .image-flakes {
-  width: 483px;
+  width: 410px;
   height: auto;
   grid-column: 1/6;
   grid-row: 1/4;
@@ -316,9 +325,10 @@ a:hover {
 .first .slide-who .slide__images .image-pine {
   grid-column: 3/6;
   grid-row: 2/6;
+  margin-top: -30px;
   width: 430px;
   height: auto;
-  place-self: end;
+  place-self: center;
 }
 
 .first .slide-shop {
@@ -354,14 +364,15 @@ a:hover {
 
 .first__dots {
   z-index: 10;
-  bottom: 60px;
+  bottom: 95px;
 }
 
 .first__dots li {
-  width: 36px;
-  height: 36px;
+  width: 25px;
+  height: 25px;
   background-color: white;
   border-radius: 50%;
+  margin: 0 13px;
 }
 
 .first__dots li.slick-active {
@@ -388,11 +399,11 @@ a:hover {
 }
 
 .first__arrow.arrow-prev {
-  left: 5%;
+  left: 34px;
 }
 
 .first__arrow.arrow-next {
-  right: 5%;
+  right: 34px;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);

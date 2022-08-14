@@ -99,6 +99,8 @@ h1,
   font-family: "Spray Letters";
   font-size: 90px;
   line-height: 104px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FAE420;
 }
@@ -110,6 +112,7 @@ h2,
   font-family: "Thirsty Caps";
   font-size: 70px;
   line-height: 62px;
+  font-weight: 400;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -178,6 +181,10 @@ button-black:hover,
   color: black;
 }
 
+p {
+  margin: 0;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -239,7 +246,7 @@ a:hover {
 }
 
 .partner {
-  padding: 28px 0 61px;
+  padding: 28px 0 44px;
   background-image: url("../img/backgrounds/3.webp");
 }
 
@@ -247,6 +254,7 @@ a:hover {
   font-family: "Spray Letters";
   font-size: 40px;
   line-height: 40px;
+  letter-spacing: 0.0em;
 }
 
 .partner__subtitle {
@@ -264,13 +272,18 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 170px;
+  gap: 320px;
 }
 
 .partner__contacts .contact {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-size: 18px;
   line-height: 22px;
+}
+
+.partner__contacts .contact__icon svg {
+  width: 22px;
+  height: auto;
 }
 @supports (-webkit-appearance:none){
 

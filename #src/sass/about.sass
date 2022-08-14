@@ -1,14 +1,18 @@
+@import "base"
 .about
     position: relative
     background-image: url("../img/backgrounds/3.webp")
 
     .container
         position: relative
-        padding: 65px 144px
+        padding: 68px 188px
         overflow: hidden
 
     h2
-        text-decoration: underline
+        margin: 0 auto 40px
+        display: block
+        width: fit-content
+        border-bottom: 3px solid $black
 
     .img-left
         position: absolute
@@ -17,26 +21,30 @@
 
     .back-img
         z-index: 0
-        top: -49px
+        top: -94px
         left: 639px
         width: 1083px
 
     &__text
+        margin-bottom: 10px
         font-family: "Open Sans"
         font-weight: 400
         font-size: 20px
         line-height: 23px
+        letter-spacing: -0.02em
         text-align: center
 
     &__design
+        margin-top: 36px
+        margin-left: 216px
         display: flex
         //align-items: center
         justify-content: center
-        gap: 41px
+        gap: 45px
 
         .design
             &__image
-                width: 454px
+                width: 415px
                 height: auto
 
             &__text
@@ -55,3 +63,6 @@
                 display: flex
                 flex-direction: column
                 align-items: center
+
+            &__btn
+                padding: 7px 30px
