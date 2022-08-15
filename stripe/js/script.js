@@ -126,10 +126,15 @@ $(document).ready(function () {
         // for(let i=0; i < newBlockChildrens.length; i++){
         //     newBlock.insertAdjacentHTML('beforeend', newBlockChildrens[i].outerHTML)
         // })
+
+        $('.products__slider').each(function (){
+            if($(this).children('.slide').length<=3){
+                $(this).html($(this).html() + $(this).html())
+            }
+        })
         $('.products__slider').slick({
             variableWidth: false,
             centerMode: true,
-            // centerPadding: '35px',
             dots: true,
             dotsClass: "slick-dots products__dots",
             arrows: true,
