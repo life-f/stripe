@@ -77,15 +77,28 @@
     &__btn
         font-size: 15px !important
         line-height: 18px !important
+        
+        &-mob
+            display: none !important
+            @media (max-width: $tabletS)
+                display: block !important
+                opacity: 0
+
+
+    .slick-current .products__btn-mob
+        @media (max-width: $tabletS)
+            opacity: 1 !important
+
 
     .slide
+        position: relative
         display: flex
         justify-content: center
         align-items: flex-end
         height: 320px
         transition: 0.3s ease-in-out
         @media screen and (max-width: $tabletS)
-            height: 250px
+            height: 350px
 
         &.slick-center,
         &.slick-current
@@ -97,6 +110,11 @@
         &__content
             display: flex
             align-items: center
+            @media (max-width: $tabletS)
+                flex-direction: column
+                gap: 45px
+
+
 
         &__image
             width: 250px
@@ -111,14 +129,17 @@
             width: 0
             transition: 0.3s ease-in-out
             overflow: hidden
+            @media (max-width: $tabletS)
+                display: none
 
             & > *
                 width: 219px
 
-        &:hover
-            .slide__info
-                margin-left: 56px
-                width: 219px
+        &.slick-current:hover
+            @media (min-width: $tabletS)
+                .slide__info
+                    margin-left: 56px
+                    width: 219px
 
     &__slider
         & .slick-track
@@ -128,8 +149,11 @@
         & .slick-list
             padding: 0 40px !important
             height: 320px
+            //@media screen and (max-width: $tabletS)
+                //height: 250px
+
             @media screen and (max-width: $tabletS)
-                height: 250px
+                height: 350px
 
         &.slick-dotted.slick-slider
             padding-top: 19px
@@ -138,6 +162,9 @@
     &__dots
         z-index: 10
         bottom: 8px
+
+        @media (max-width: $tabletS)
+            bottom: 88px
 
         li
             width: 20px

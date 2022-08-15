@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-        $("#years-popup").addClass("active")
+        // $("#years-popup").addClass("active")
 
         $("#yes").click(() => {
             $("#years-popup").removeClass("active")
@@ -8,19 +8,41 @@ $(document).ready(function () {
 
         $('.products__btn').on('click', function () {
             let id = $(this).attr('data-for')
-            $('#'+id).addClass('active')
+            $('#' + id).addClass('active')
+            $('.popup-product__slider').slick({
+                variableWidth: false,
+                dots: false,
+                arrows: true,
+                prevArrow: '<div class="arrow-prev popup-arrow arrow"></div>',
+                nextArrow: '<div class="arrow-next popup-arrow arrow"></div>',
+                slidesToShow: 1,
+                infinite: true,
+                autoplay: true,
+            });
         })
 
-        $('.popup').on('click', function (event){
+        $('.popup').on('click', function (event) {
             event.stopPropagation()
         })
 
-        $('.wrapper-to-close').on('click', function(){
+
+
+        $('.wrapper-to-close').on('click', function () {
             $(this).removeClass('active')
+        })
+        $('.popup-product__close').on('click', function () {
+            $(this).closest('.wrapper').removeClass('active')
         })
 
 
-        $(".menu-burger").click(() => {
+        $('.popup-product__close-mob').on('click', function () {
+            $(this).closest('.wrapper').removeClass('active')
+        })
+
+
+
+
+    $(".menu-burger").click(() => {
             if ($(".menu-burger").hasClass("active")) {
                 $(".menu-burger").removeClass("active")
                 $(".header__menu").removeClass("active")
