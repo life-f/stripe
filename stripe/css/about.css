@@ -500,6 +500,10 @@ a:hover {
     line-height: 14px;
   }
 
+  .about {
+    overflow-x: hidden;
+  }
+
   .about .container {
     padding: 40px 25px 63px;
   }
