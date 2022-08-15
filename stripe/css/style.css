@@ -600,6 +600,10 @@ a:hover {
           align-items: center;
 }
 
+.header__phone svg {
+  margin-right: 5px;
+}
+
 .header a {
   opacity: 0.6;
 }
@@ -5377,6 +5381,8 @@ a:hover {
   }
 
   .popup-product__text {
+    font-size: 13px;
+    line-grid: 15.6px;
     text-align: center;
   }
 }

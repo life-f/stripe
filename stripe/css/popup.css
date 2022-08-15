@@ -690,6 +690,8 @@ a:hover {
   }
 
   .popup-product__text {
+    font-size: 13px;
+    line-grid: 15.6px;
     text-align: center;
   }
 }

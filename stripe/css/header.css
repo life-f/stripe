@@ -325,6 +325,10 @@ a:hover {
           align-items: center;
 }
 
+.header__phone svg {
+  margin-right: 5px;
+}
+
 .header a {
   opacity: 0.6;
 }
