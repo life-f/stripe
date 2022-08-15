@@ -12,7 +12,7 @@ $(document).ready(function () {
             $('#' + id)[0].scrollIntoView({behavior: "smooth"})
         })
 
-        $('.products__btn').on('click', function () {
+        $('.products__slider .slide__image').on('click', function () {
             let id = $(this).attr('data-for')
             $('#' + id).addClass('active')
             $('.popup-product__slider').slick({

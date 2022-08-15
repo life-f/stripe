@@ -2167,10 +2167,11 @@ a:hover {
 .products .slide__info {
   margin-left: 0;
   width: 0;
-  -webkit-transition: 0.3s ease-in-out;
-  -o-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: margin 0.3s ease-in-out, width 0.3s ease-in-out, opacity 0.3s 0.2s ease-in-out;
+  -o-transition: margin 0.3s ease-in-out, width 0.3s ease-in-out, opacity 0.3s 0.2s ease-in-out;
+  transition: margin 0.3s ease-in-out, width 0.3s ease-in-out, opacity 0.3s 0.2s ease-in-out;
   overflow: hidden;
+  opacity: 0;
 }
 
 .products .slide__info > * {
@@ -3725,6 +3726,7 @@ a:hover {
   .products .slide.slick-current:hover .slide__info {
     margin-left: 56px;
     width: 219px;
+    opacity: 1;
   }
 }
 
