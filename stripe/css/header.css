@@ -478,6 +478,46 @@ a:hover {
     height: auto;
   }
 }
+
+@media screen and (max-width: 600px) {
+  h1,
+  .h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  .fs-25 {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .fs-20 {
+    font-size: 14px;
+  }
+
+  .fs-23 {
+    font-size: 14px;
+  }
+
+  .lh-26 {
+    line-height: 14px;
+  }
+
+  .header .container {
+    padding: 15px 30px 6px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .header__logo img {
+    width: 89px;
+  }
+
+  .header__menu-mobile {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
 @supports (-webkit-appearance:none){
 
 }
@@ -491,6 +531,14 @@ a:hover {
 }
 
  @media screen and (max-width: 1024px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-width: 600px){
 
 @supports (-webkit-appearance:none){
 

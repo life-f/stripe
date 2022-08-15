@@ -4,6 +4,10 @@
     background-image: url("../img/backgrounds/3.webp")
     @media screen and (max-width: $tabletS)
         padding: 32px 0
+    @media screen and (max-width: $mobileS)
+        padding: 36px 0 55px
+        position: relative
+        overflow-x: clip
 
     h2
         font-family: "Spray Letters"
@@ -13,12 +17,19 @@
         @media screen and (max-width: $tabletS)
             margin-bottom: 10px
             font-size: 23px
+        @media screen and (max-width: $mobileS)
+            font-size: 30px
+            margin-bottom: 17px
 
     &__subtitle
         text-align: center
         @media screen and (max-width: $tabletS)
             font-size: 16px
             line-height: 20px
+        @media screen and (max-width: $mobileS)
+            margin-bottom: 36px
+            font-size: 13px
+            line-height: 16px
 
     &__content
         margin: 0 290px 0 390px
@@ -29,6 +40,9 @@
         @media screen and (max-width: $tabletS)
             margin: 0 0 0 30px
             gap: 235px
+        @media screen and (max-width: $mobileS)
+            display: block
+            margin: 0 0 0 50px
 
     &__contacts
         & .contact
@@ -39,6 +53,10 @@
                 margin-bottom: 7px
                 font-size: 13px
                 line-height: 16px
+            @media screen and (max-width: $mobileS)
+                margin-bottom: 15px
+                font-size: 12px
+                line-height: 14px
 
             &__icon
                 svg
@@ -47,6 +65,10 @@
 
                 @media screen and (max-width: $tabletS)
                     display: none
+                @media screen and (max-width: $mobileS)
+                    display: inline-block
+                    svg
+                        width: 13px
 
     &__image
         img
@@ -56,3 +78,9 @@
         @media screen and (max-width: $tabletS)
             width: 130px
             transform: rotate(21deg)
+        @media screen and (max-width: $mobileS)
+            width: 177px
+            transform: rotate(-27deg)
+            right: -60px
+            position: absolute
+            top: 100px

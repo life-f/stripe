@@ -418,7 +418,7 @@ a:hover {
   }
 
   .why__items .item__icon {
-    height: auto;
+    height: 64px;
     width: 64px;
     margin-bottom: 29px;
   }
@@ -439,6 +439,68 @@ a:hover {
     line-height: 15px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  h1,
+  .h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  .fs-25 {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .fs-20 {
+    font-size: 14px;
+  }
+
+  .fs-23 {
+    font-size: 14px;
+  }
+
+  .lh-26 {
+    line-height: 14px;
+  }
+
+  .why .container {
+    padding: 70px 15px 35px;
+  }
+
+  .why__phrase {
+    display: none;
+  }
+
+  .why h2 {
+    margin-bottom: 28px;
+  }
+
+  .why__items .item {
+    width: 127px;
+  }
+
+  .why__items .item:last-child {
+    width: 127px;
+  }
+
+  .why__items .item__icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 35px;
+  }
+
+  .why__items .item__title {
+    margin-bottom: 8px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .why__items .item__desc {
+    font-size: 8px;
+    line-height: 12px;
+  }
+}
 @supports (-webkit-appearance:none){
 
 }
@@ -455,6 +517,14 @@ a:hover {
 
 @supports (-webkit-appearance:none){
 .why__items .item{background-image:url("../img/icon-back.webp")}
+}
+
+}
+
+ @media screen and (max-width: 600px){
+
+@supports (-webkit-appearance:none){
+
 }
 
 }

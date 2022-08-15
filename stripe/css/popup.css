@@ -600,6 +600,42 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 600px) {
+  h1,
+  .h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  .fs-25 {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .fs-20 {
+    font-size: 14px;
+  }
+
+  .fs-23 {
+    font-size: 14px;
+  }
+
+  .lh-26 {
+    line-height: 14px;
+  }
+
+  .popup-product .popup-arrow {
+    width: 34px;
+    height: 34px;
+    padding: 5px;
+    border-radius: 4px;
+    background-image: url("../img/arrow.svg") !important;
+    background-size: 20px;
+    background-position: center;
+    background-color: #d6d4d4;
+  }
+}
+
 @media (max-width: 600px) {
   .popup-product__close {
     display: none;
@@ -657,19 +693,6 @@ a:hover {
     text-align: center;
   }
 }
-
-@media screen and (max-width: 600px) {
-  .popup-product .popup-arrow {
-    width: 34px;
-    height: 34px;
-    padding: 5px;
-    border-radius: 4px;
-    background-image: url("../img/arrow.svg") !important;
-    background-size: 20px;
-    background-position: center;
-    background-color: #d6d4d4;
-  }
-}
 @supports (-webkit-appearance:none){
 .popup-product::after{background-image:url("../img/angel.webp")}
 .popup-product .popup-arrow{background-image:url("data:image/svg+xml,%3Csvg width='20' height='26' viewBox='0 0 20 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.66948e-07 13L19.5 0.875645L19.5 25.1244L1.66948e-07 13Z' fill='%23D9D9D9'/%3E%3C/svg%3E")}
@@ -700,18 +723,18 @@ a:hover {
 
 }
 
- @media (max-width: 600px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}
-
  @media screen and (max-width: 600px){
 
 @supports (-webkit-appearance:none){
 .popup-product .popup-arrow{background-image:url("../img/arrow.svg") !important}
+}
+
+}
+
+ @media (max-width: 600px){
+
+@supports (-webkit-appearance:none){
+
 }
 
 }

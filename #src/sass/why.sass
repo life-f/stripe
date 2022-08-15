@@ -8,6 +8,9 @@
         padding: 82px 160px 60px
         @media screen and (max-width: $tabletS)
             padding: 35px 80px 57px
+        @media screen and (max-width: $mobileS)
+            padding: 70px 15px 35px
+
 
     &__phrase
         margin-left: 22px
@@ -20,10 +23,14 @@
         @media screen and (max-width: $tabletS)
             font-size: 55px
             line-height: 49px
+        @media screen and (max-width: $mobileS)
+            display: none
 
     h2
         @media screen and (max-width: $tabletS)
             margin-bottom: 0px
+        @media screen and (max-width: $mobileS)
+            margin-bottom: 28px
 
     &__items
         display: flex
@@ -50,17 +57,25 @@
                 background-repeat: no-repeat
                 &:last-child
                     width: 200px
+            @media screen and (max-width: $mobileS)
+                width: 127px
+                &:last-child
+                    width: 127px
 
             &__icon
                 margin-bottom: 47px
                 height: 80px
                 @media screen and (max-width: $tabletS)
-                    height: auto
+                    height: 64px
                     width: 64px
                     margin-bottom: 29px
                     img
                         width: 100%
                         height: auto
+                @media screen and (max-width: $mobileS)
+                    width: 50px
+                    height: 50px
+                    margin-bottom: 35px
 
 
             &__title
@@ -74,6 +89,11 @@
                     margin-bottom: 22px
                     font-size: 18px
                     line-height: 22px
+                @media screen and (max-width: $mobileS)
+                    margin-bottom: 8px
+                    font-size: 13px
+                    line-height: 16px
+
 
             &__desc
                 font-weight: 600
@@ -83,3 +103,6 @@
                 @media screen and (max-width: $tabletS)
                     font-size: 12px
                     line-height: 15px
+                @media screen and (max-width: $mobileS)
+                    font-size: 8px
+                    line-height: 12px

@@ -2,6 +2,7 @@
 .about
     position: relative
     background-image: url("../img/backgrounds/3.webp")
+    overflow-x: clip
 
     .container
         position: relative
@@ -9,6 +10,8 @@
         overflow: hidden
         @media screen and (max-width: $tabletS)
             padding: 59px 85px 86px
+        @media screen and (max-width: $mobileS)
+            padding: 40px 25px 63px
 
     h2
         margin: 0 auto 40px
@@ -17,6 +20,8 @@
         border-bottom: 3px solid $black
         @media screen and (max-width: $tabletS)
             margin-bottom: 52px
+        @media screen and (max-width: $mobileS)
+            margin-bottom: 68px
 
     .img-left
         position: absolute
@@ -25,6 +30,8 @@
         @media screen and (max-width: $tabletS)
             width: 258px
             bottom: -93px
+        @media screen and (max-width: $mobileS)
+            display: none
 
 
     .back-img
@@ -37,6 +44,12 @@
             width: 609px
             left: -173px
             top: -16px
+        @media screen and (max-width: $mobileS)
+            transform: none
+            width: 310px
+            top: 45px
+            right: -97px
+            left: unset
 
     .img-right
         display: none
@@ -50,6 +63,8 @@
             left: unset
             top: 229px
             transform: rotate(-4deg)
+        @media screen and (max-width: $mobileS)
+            display: none
 
     &__text
         margin-bottom: 10px
@@ -59,10 +74,20 @@
         line-height: 23px
         letter-spacing: -0.02em
         text-align: center
+
+        br
+            display: none
+
         @media screen and (max-width: $tabletS)
             margin-bottom: 30px
             font-size: 18px
             line-height: 20px
+        @media screen and (max-width: $mobileS)
+            margin-bottom: 10px
+            font-size: 14px
+            line-height: 16px
+            br
+                display: inline-block
 
 
     &__design
@@ -74,6 +99,9 @@
         column-gap: 45px
         @media screen and (max-width: $tabletS)
             margin-left: 0
+        @media screen and (max-width: $mobileS)
+            margin: 51px auto 0
+
 
         .design
             &__image
@@ -86,6 +114,10 @@
                     place-self: center
                     margin-bottom: 66px
                     width: 330px
+                @media screen and (max-width: $mobileS)
+                    margin-bottom: 64px
+                    width: 90vw
+                    max-width: 90%
 
             &__text
                 grid-column: 2/3
@@ -103,6 +135,8 @@
                     margin-bottom: 20px
                     font-size: 55px
                     line-height: 49px
+                @media screen and (max-width: $mobileS)
+                    margin-bottom: 38px
 
 
             &__btn
@@ -117,3 +151,6 @@
                     place-self: center
                     font-size: 30px
                     line-height: 36px
+                @media screen and (max-width: $mobileS)
+                    font-size: 20px
+                    line-height: 24px

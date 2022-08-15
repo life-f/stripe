@@ -12,6 +12,9 @@
             gap: 5px
             font-size: 13px
             line-height: 18px
+        @media screen and (max-width: $mobileS)
+            padding: 30px 0 33px
+            gap: 10px
 
     a
         color: $black
@@ -30,6 +33,8 @@
         @media screen and (max-width: $tabletS)
             gap: 66px
             margin-bottom: 18px
+        @media screen and (max-width: $mobileS)
+            gap: 40px
 
         & .social-item svg
             width: 50px
@@ -52,4 +57,10 @@
             display: inline-block
             margin: 0 auto
             max-width: 375px
+    @media screen and (max-width: $mobileS)
+        padding: 7px 0
+        font-size: 12px
+        line-height: 14px
+        span
+            max-width: 206px
 

@@ -353,6 +353,10 @@ a:hover {
   place-self: center;
 }
 
+.first .slide-who .btn {
+  display: none;
+}
+
 .first .slide-shop {
   background-image: url("../img/backgrounds/Фон 2.webp");
 }
@@ -553,6 +557,118 @@ a:hover {
     right: 20px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  h1,
+  .h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  .fs-25 {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .fs-20 {
+    font-size: 14px;
+  }
+
+  .fs-23 {
+    font-size: 14px;
+  }
+
+  .lh-26 {
+    line-height: 14px;
+  }
+
+  .first__title {
+    text-shadow: 3px 3px 5px #262200;
+    font-size: 60px;
+    line-height: 53px;
+  }
+
+  .first .slide {
+    height: 497px;
+    background-position: center;
+    background-image: url("../img/backgrounds/Фон 1 Mobile.png");
+    background-image: url("../img/backgrounds/Фон 1 Mobile.webp");
+    background-color: rgba(35, 35, 35, 0.95);
+  }
+
+  .first .slide .container {
+    padding: 60px 0 0;
+  }
+
+  .first .slide-who {
+    background-position: center;
+    background-image: url("../img/backgrounds/Фон 1 Mobile.png");
+    background-image: url("../img/backgrounds/Фон 1 Mobile.webp");
+    background-color: rgba(35, 35, 35, 0.95);
+  }
+
+  .first .slide-who .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .first .slide-who .slide__title {
+    margin-left: 0;
+  }
+
+  .first .slide-who .slide__images {
+    margin-left: 20px;
+  }
+
+  .first .slide-who .slide__images .image-hello {
+    display: none;
+  }
+
+  .first .slide-who .slide__images .image-flakes {
+    width: 180px;
+    grid-column: 1/5;
+    grid-row: 1/4;
+  }
+
+  .first .slide-who .slide__images .image-pine {
+    margin-top: 15px;
+    grid-column: 4/6;
+    grid-row: 1/6;
+    -webkit-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+
+  .first .slide-who .btn {
+    display: block;
+    margin-top: 50px;
+  }
+
+  .first .slide-shop .container {
+    padding: 0;
+    background-position: 20px 70px;
+  }
+
+  .first .slide-shop .h1 {
+    font-size: 70px;
+    line-height: 90px;
+  }
+
+  .first__dots {
+    bottom: 100px;
+  }
+
+  .first__dots li {
+    width: 11px;
+    height: 11px;
+    margin: 0 6px;
+  }
+}
 @supports (-webkit-appearance:none){
 .first__arrow{background-image:url("../img/arrow.svg")}
 }
@@ -569,6 +685,15 @@ a:hover {
 
 @supports (-webkit-appearance:none){
 
+}
+
+}
+
+ @media screen and (max-width: 600px){
+
+@supports (-webkit-appearance:none){
+.first .slide{background-image:url("../img/backgrounds/Фон 1 Mobile.webp")}
+.first .slide-who{background-image:url("../img/backgrounds/Фон 1 Mobile.webp")}
 }
 
 }

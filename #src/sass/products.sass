@@ -28,6 +28,8 @@
             width: 277px
             right: -42px
             bottom: -87px
+        @media screen and (max-width: $mobileS)
+            display: none
 
     &__banner
         position: absolute
@@ -40,16 +42,23 @@
         @media screen and (max-width: $tabletS)
             left: 30px
             width: 290px
+        @media screen and (max-width: $mobileS)
+            left: 9px
+            width: 210px
 
         &-first
             top: -85px
             @media screen and (max-width: $tabletS)
                 top: -72px
+            @media screen and (max-width: $mobileS)
+                top: -50px
 
         &-second
             top: -57px
             @media screen and (max-width: $tabletS)
                 top: -65px
+            @media screen and (max-width: $mobileS)
+                top: -48px
 
 
     &__title
@@ -114,6 +123,8 @@
         transition: 0.3s ease-in-out
         @media screen and (max-width: $tabletS)
             height: 350px
+        //@media screen and (max-width: $mobileS)
+            display: block
 
         &.slick-center,
         &.slick-current
@@ -121,6 +132,8 @@
                 width: 320px
                 @media screen and (max-width: $tabletS)
                     width: 250px
+                @media screen and (max-width: $mobileS)
+                    width: 200px
 
         &__content
             display: flex
@@ -136,6 +149,8 @@
             transition: 0.3s ease-in-out
             @media screen and (max-width: $tabletS)
                 width: 180px
+            @media screen and (max-width: $mobileS)
+                width: 130px
 
 
         &__info
@@ -166,6 +181,8 @@
             @media screen and (max-width: $tabletS)
                 padding: 0px !important
             //height: 250px
+            @media screen and (max-width: $mobileS)
+                padding: 0 80px !important
 
             @media screen and (max-width: $tabletS)
                 height: 350px

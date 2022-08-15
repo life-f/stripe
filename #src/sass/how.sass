@@ -6,6 +6,8 @@
     background-image: url("../img/backgrounds/1.webp")
     @media screen and (max-width: $tabletS)
         padding: 71px 0 40px
+    @media screen and (max-width: $mobileS)
+        padding: 64px 0 50px
 
     .back-img
         width: 313px
@@ -15,6 +17,8 @@
         @media screen and (max-width: $tabletS)
             width: 207px
             left: 0
+        @media screen and (max-width: $mobileS)
+            display: none
 
     h2
         margin-bottom: 0
@@ -23,9 +27,13 @@
         margin-top: -45px
         @media screen and (max-width: $tabletS)
             margin-top: -32px
+        @media screen and (max-width: $mobileS)
+            margin-top: 0
 
         &.slick-dotted.slick-slider
             margin-bottom: 0
+            @media screen and (max-width: $mobileS)
+                margin-bottom: 60px
 
         & .arrow
             top: 42%
@@ -50,6 +58,8 @@
         bottom: 0px
         @media screen and (max-width: $tabletS)
             bottom: -25px
+        @media screen and (max-width: $mobileS)
+            bottom: -30px
 
         li
             margin: 0 2px
@@ -60,6 +70,9 @@
             @media screen and (max-width: $tabletS)
                 width: 19px
                 height: 19px
+            @media screen and (max-width: $mobileS)
+                width: 11px
+                height: 11px
 
             &.slick-active
                 background-color: $white
@@ -75,6 +88,10 @@
         //padding: 0 250px
         @media screen and (max-width: $tabletS)
             gap: 10px
+        @media screen and (max-width: $mobileS)
+            flex-direction: column
+            gap: 0
+
 
         &__image
             margin-left: -160px
@@ -83,10 +100,16 @@
             @media screen and (max-width: $tabletS)
                 margin-left: -120px
                 width: 259px
+            @media screen and (max-width: $mobileS)
+                margin-left: 0
 
             img
                 width: 100%
                 height: auto
+
+        &__content
+            @media screen and (max-width: $mobileS)
+                text-align: center
 
         &__title
             display: inline-block
@@ -102,6 +125,10 @@
                 padding: 5px 10px
                 font-size: 20px
                 line-height: 25px
+            @media screen and (max-width: $mobileS)
+                margin-bottom: 10px
+                font-size: 16px
+                line-height: 20px
 
         &__desc
             max-width: 270px
@@ -113,3 +140,12 @@
                 max-width: 145px
                 font-size: 13px
                 line-height: 16px
+
+    &__btn
+        display: none !important
+        @media screen and (max-width: $mobileS)
+            display: block
+            font-size: 15px
+            line-height: 18px
+            max-width: 166px
+            margin: 0 auto

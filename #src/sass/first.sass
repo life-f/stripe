@@ -20,6 +20,10 @@
         @media screen and (max-width: $tabletS)
             font-size: 65px
             line-height: 58px
+        @media screen and (max-width: $mobileS)
+            text-shadow: 3px 3px 5px #262200
+            font-size: 60px
+            line-height: 53px
 
 
     .slick-dotted.slick-slider
@@ -31,18 +35,35 @@
         background-size: cover
         @media screen and (max-width: $tabletS)
             height: 387px
+        @media screen and (max-width: $mobileS)
+            height: 497px
+            background-position: center
+            background-image: url("../img/backgrounds/Фон 1 Mobile.png")
+            background-image: url("../img/backgrounds/Фон 1 Mobile.webp")
+            background-color: $black-op80
 
         .container
             padding: 58px 34px 0px
+            @media screen and (max-width: $mobileS)
+                padding: 60px 0 0
 
 
         &-who
             background-image: url("../img/backgrounds/Фон 1.webp")
+            @media screen and (max-width: $mobileS)
+                background-position: center
+                background-image: url("../img/backgrounds/Фон 1 Mobile.png")
+                background-image: url("../img/backgrounds/Фон 1 Mobile.webp")
+                background-color: $black-op80
+
 
             .container
                 display: grid
                 grid-template-columns: 1fr 1fr
                 align-items: center
+                @media screen and (max-width: $mobileS)
+                    display: flex
+                    flex-direction: column
 
             .slide__title
                 text-align: center
@@ -51,6 +72,8 @@
                 @media screen and (max-width: $tabletS)
                     margin-left: 44px
                     margin-top: -15px
+                @media screen and (max-width: $mobileS)
+                    margin-left: 0
 
 
             .slide__images
@@ -58,6 +81,8 @@
                 //min-height: 560px
                 //min-width: 600px
                 display: grid
+                @media screen and (max-width: $mobileS)
+                    margin-left: 20px
 
                 picture
                     position: relative
@@ -76,6 +101,8 @@
                     @media screen and (max-width: $tabletS)
                         width: 132px
                         margin-left: -41px
+                    @media screen and (max-width: $mobileS)
+                        display: none
 
                 .image-flakes
                     width: 410px
@@ -87,6 +114,10 @@
                     grid-row: 1/4
                     @media screen and (max-width: $tabletS)
                         width: 217px
+                    @media screen and (max-width: $mobileS)
+                        width: 180px
+                        grid-column: 1/5
+                        grid-row: 1/4
 
                 .image-pine
                     grid-column: 3/6
@@ -98,9 +129,17 @@
                     @media screen and (max-width: $tabletS)
                         width: 207px
                         margin-top: 0px
-        //position: absolute
-        //bottom: 0
-        //left: 185px
+                    @media screen and (max-width: $mobileS)
+                        margin-top: 15px
+                        grid-column: 4/6
+                        grid-row: 1/6
+                        transform: rotate(30deg)
+
+            & .btn
+                display: none
+                @media screen and (max-width: $mobileS)
+                    display: block
+                    margin-top: 50px
 
         &-shop
             background-image: url("../img/backgrounds/Фон 2.webp")
@@ -118,6 +157,9 @@
                 background-repeat: no-repeat
                 @media screen and (max-width: $tabletS)
                     background-size: contain
+                @media screen and (max-width: $mobileS)
+                    padding: 0
+                    background-position: 20px 70px
 
 
             & .h1
@@ -128,6 +170,9 @@
                     font-size: 90px
                     line-height: 110px
                     margin-bottom: 20px
+                @media screen and (max-width: $mobileS)
+                    font-size: 70px
+                    line-height: 90px
 
 
     &__dots
@@ -135,6 +180,8 @@
         bottom: 95px
         @media screen and (max-width: $tabletS)
             bottom: 50px
+        @media screen and (max-width: $mobileS)
+            bottom: 100px
 
         li
             width: 25px
@@ -146,6 +193,10 @@
                 width: 16px
                 height: 16px
                 margin: 0 10px
+            @media screen and (max-width: $mobileS)
+                width: 11px
+                height: 11px
+                margin: 0 6px
 
             &.slick-active
                 background-color: $red-purple

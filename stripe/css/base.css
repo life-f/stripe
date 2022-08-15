@@ -318,6 +318,31 @@ a:hover {
     line-height: 20px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  h1,
+  .h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  .fs-25 {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .fs-20 {
+    font-size: 14px;
+  }
+
+  .fs-23 {
+    font-size: 14px;
+  }
+
+  .lh-26 {
+    line-height: 14px;
+  }
+}
 @supports (-webkit-appearance:none){
 
 }
@@ -331,6 +356,14 @@ a:hover {
 }
 
  @media screen and (max-width: 1024px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-width: 600px){
 
 @supports (-webkit-appearance:none){
 

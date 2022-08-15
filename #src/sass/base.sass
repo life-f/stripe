@@ -1,12 +1,7 @@
 /* Экраны */
 $mobileS: 600px
-//$mobileM: 414px
-//$mobileL: 568px
 $tabletS: 1024px
-//$tabletM: 1024px
 $desktopS: 1440px
-//$desktopM: 1600px
-//$desktopL: 1920px
 
 /* Цвета */
 $white: rgba(255, 255, 255, 1)
@@ -108,10 +103,6 @@ body
     @media screen and (max-width: $tabletS)
         font-size: 16px
         line-height: 20px
-//overflow: hidden
-//@media screen and (max-width: $tabletS)
-    font-size: 18px
-    line-height: 21px
 
 .container
     width: 1440px
@@ -119,20 +110,10 @@ body
     max-width: 1440px
     @media screen and (max-width: $desktopS)
         width: 100vw
-//@media screen and (max-width: $tabletS)
-    width: 100vw
-//@media screen and (max-width: $mobileL)
-    padding: 30px
-    width: 100vw
 
 div
     box-sizing: border-box
 
-//h1, h2, h3
-//    font-family: 'Georgia', serif
-//    font-weight: 400
-//    margin: 0
-//
 h1, .h1
     font-family: "Spray Letters"
     font-size: 90px
@@ -144,6 +125,9 @@ h1, .h1
     @media screen and (max-width: $tabletS)
         font-size: 50px
         line-height: 58px
+    @media screen and (max-width: $mobileS)
+        font-size: 40px
+        line-height: 46px
 
 h2, .h2
     margin-top: 0
@@ -158,10 +142,6 @@ h2, .h2
         margin-bottom: 52px
         font-size: 50px
         line-height: 44px
-//@media screen and (max-width: $tabletS)
-    margin-bottom: 40px
-    font-size: 30px
-    line-height: 34px
 
 section
     background-size: cover
@@ -250,16 +230,24 @@ a
     @media screen and (max-width: $tabletS)
         font-size: 16px
         line-height: 20px
+    @media screen and (max-width: $mobileS)
+        font-size: 13px
+        line-height: 16px
+
 
 .fs-20
     font-size: 20px
     @media screen and (max-width: $tabletS)
         font-size: 18px
+    @media screen and (max-width: $mobileS)
+        font-size: 14px
 
 .fs-23
     font-size: 23px
     @media screen and (max-width: $tabletS)
         font-size: 18px
+    @media screen and (max-width: $mobileS)
+        font-size: 14px
 
 .lh-20
     line-height: 20px
@@ -268,6 +256,8 @@ a
     line-height: 26px
     @media screen and (max-width: $tabletS)
         line-height: 20px
+    @media screen and (max-width: $mobileS)
+        line-height: 14px
 
 .fw-400
     font-weight: 400
@@ -284,38 +274,3 @@ a
 
 .slick-dotted.slick-slider
     margin-bottom: 0
-//
-//.slick-dots
-//    bottom: -80px
-//
-//    li
-//        & > button
-//            background-color: $dark-blue
-//            opacity: 0.5
-//
-//            &:before
-//                content: ""
-//
-//        &.slick-active
-//            & > button
-//                opacity: 1
-//
-//.arrow
-//    position: absolute
-//    top: 40%
-//    width: 60px
-//    height: 120px
-//    background-size: cover
-//    @media screen and (max-width: $desktopS)
-//        &-prev
-//            left: -90px
-//        &-next
-//            right: -90px
-//
-//    &-prev
-//        left: -130px
-//        background-image: url("../img/arrow-prev.png")
-//
-//    &-next
-//        right: -130px
-//        background-image: url("../img/arrow-next.png")

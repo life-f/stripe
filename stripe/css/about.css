@@ -272,6 +272,7 @@ a:hover {
 .about {
   position: relative;
   background-image: url("../img/backgrounds/3.webp");
+  overflow-x: clip;
 }
 
 .about .container {
@@ -316,6 +317,10 @@ a:hover {
   line-height: 23px;
   letter-spacing: -0.02em;
   text-align: center;
+}
+
+.about__text br {
+  display: none;
 }
 
 .about__design {
@@ -470,6 +475,86 @@ a:hover {
     line-height: 36px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  h1,
+  .h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  .fs-25 {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .fs-20 {
+    font-size: 14px;
+  }
+
+  .fs-23 {
+    font-size: 14px;
+  }
+
+  .lh-26 {
+    line-height: 14px;
+  }
+
+  .about .container {
+    padding: 40px 25px 63px;
+  }
+
+  .about h2 {
+    margin-bottom: 68px;
+  }
+
+  .about .img-left {
+    display: none;
+  }
+
+  .about .back-img {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    width: 310px;
+    top: 45px;
+    right: -97px;
+    left: unset;
+  }
+
+  .about .img-right {
+    display: none;
+  }
+
+  .about__text {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .about__text br {
+    display: inline-block;
+  }
+
+  .about__design {
+    margin: 51px auto 0;
+  }
+
+  .about__design .design__image {
+    margin-bottom: 64px;
+    width: 90vw;
+    max-width: 90%;
+  }
+
+  .about__design .design__text {
+    margin-bottom: 38px;
+  }
+
+  .about__design .design__btn {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
 @supports (-webkit-appearance:none){
 
 }
@@ -483,6 +568,14 @@ a:hover {
 }
 
  @media screen and (max-width: 1024px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-width: 600px){
 
 @supports (-webkit-appearance:none){
 
