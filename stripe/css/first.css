@@ -300,7 +300,7 @@ a:hover {
 }
 
 .first .slide-who {
-  background-image: url("../img/backgrounds/Фон 1.webp");
+  background-image: url("../img/backgrounds/Фон 1.png");
 }
 
 .first .slide-who .container {
@@ -358,7 +358,7 @@ a:hover {
 }
 
 .first .slide-shop {
-  background-image: url("../img/backgrounds/Фон 2.webp");
+  background-image: url("../img/backgrounds/Фон 2.png");
 }
 
 .first .slide-shop .container {
@@ -376,7 +376,7 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("../img/first-shop.webp");
+  background-image: url("../img/first-shop.png");
   background-position-y: bottom;
   background-position-x: center;
   background-repeat: no-repeat;
@@ -592,7 +592,7 @@ a:hover {
     height: 497px;
     background-position: center;
     background-image: url("../img/backgrounds/Фон 1 Mobile.png");
-    background-image: url("../img/backgrounds/Фон 1 Mobile.webp");
+    background-image: url("../img/backgrounds/Фон 1 Mobile.png");
     background-color: rgba(35, 35, 35, 0.95);
   }
 
@@ -603,7 +603,7 @@ a:hover {
   .first .slide-who {
     background-position: center;
     background-image: url("../img/backgrounds/Фон 1 Mobile.png");
-    background-image: url("../img/backgrounds/Фон 1 Mobile.webp");
+    background-image: url("../img/backgrounds/Фон 1 Mobile.png");
     background-color: rgba(35, 35, 35, 0.95);
   }
 
@@ -670,6 +670,9 @@ a:hover {
   }
 }
 @supports (-webkit-appearance:none){
+.first .slide-who{background-image:url("../img/backgrounds/Фон 1.webp")}
+.first .slide-shop{background-image:url("../img/backgrounds/Фон 2.webp")}
+.first .slide-shop .container{background-image:url("../img/first-shop.webp")}
 .first__arrow{background-image:url("../img/arrow.svg")}
 }
 
@@ -693,6 +696,8 @@ a:hover {
 
 @supports (-webkit-appearance:none){
 .first .slide{background-image:url("../img/backgrounds/Фон 1 Mobile.webp")}
+.first .slide{background-image:url("../img/backgrounds/Фон 1 Mobile.webp")}
+.first .slide-who{background-image:url("../img/backgrounds/Фон 1 Mobile.webp")}
 .first .slide-who{background-image:url("../img/backgrounds/Фон 1 Mobile.webp")}
 }
 

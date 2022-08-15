@@ -909,7 +909,7 @@ a:hover {
 }
 
 .first .slide-who {
-  background-image: url("../img/backgrounds/Фон 1.webp");
+  background-image: url("../img/backgrounds/Фон 1.png");
 }
 
 .first .slide-who .container {
@@ -967,7 +967,7 @@ a:hover {
 }
 
 .first .slide-shop {
-  background-image: url("../img/backgrounds/Фон 2.webp");
+  background-image: url("../img/backgrounds/Фон 2.png");
 }
 
 .first .slide-shop .container {
@@ -985,7 +985,7 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("../img/first-shop.webp");
+  background-image: url("../img/first-shop.png");
   background-position-y: bottom;
   background-position-x: center;
   background-repeat: no-repeat;
@@ -1317,7 +1317,7 @@ a:hover {
 
 .about {
   position: relative;
-  background-image: url("../img/backgrounds/3.webp");
+  background-image: url("../img/backgrounds/3.png");
   overflow-x: clip;
 }
 
@@ -1340,6 +1340,20 @@ a:hover {
   position: absolute;
   left: 0;
   bottom: -122px;
+}
+
+.about .back-img-mob {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.2;
+  background-image: url("../img/angel.png");
+  background-size: 1083px;
+  background-repeat: no-repeat;
+  background-position: 639px -94px;
+  min-width: 50%;
+  height: 100%;
 }
 
 .about .back-img {
@@ -1678,7 +1692,7 @@ a:hover {
 
 .why {
   color: white;
-  background-image: url("../img/backgrounds/1.webp");
+  background-image: url("../img/backgrounds/1.png");
 }
 
 .why .container {
@@ -2010,7 +2024,7 @@ a:hover {
 }
 
 .products {
-  background-image: url("../img/backgrounds/1.webp");
+  background-image: url("../img/backgrounds/1.png");
 }
 
 .products .container {
@@ -2024,12 +2038,12 @@ a:hover {
 .products__container-first {
   position: relative;
   margin-bottom: 42px;
-  background-image: url("../img/backgrounds/4.webp");
+  background-image: url("../img/backgrounds/4.png");
   overflow-x: clip;
 }
 
 .products__container-second {
-  background-image: url("../img/backgrounds/5.webp");
+  background-image: url("../img/backgrounds/5.png");
 }
 
 .products .back-img {
@@ -2492,7 +2506,7 @@ a:hover {
   position: relative;
   padding: 64px 0 19px;
   color: white;
-  background-image: url("../img/backgrounds/1.webp");
+  background-image: url("../img/backgrounds/1.png");
 }
 
 .how .back-img {
@@ -2864,7 +2878,7 @@ a:hover {
 
 .partner {
   padding: 28px 0 44px;
-  background-image: url("../img/backgrounds/3.webp");
+  background-image: url("../img/backgrounds/3.png");
 }
 
 .partner h2 {
@@ -4102,6 +4116,26 @@ a:hover {
     bottom: -93px;
   }
 
+  .about .back-img-mob {
+    left: 0;
+    right: unset;
+    -webkit-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+            transform: scaleX(-1);
+    background-size: 609px;
+    background-position: -17px -40px;
+  }
+
+  .about .back-img-mob {
+    left: unset;
+    right: 0;
+    -webkit-transform: unset;
+        -ms-transform: unset;
+            transform: unset;
+    background-size: 310px;
+    background-position: -65px 45px;
+  }
+
   .about .back-img {
     -webkit-transform: scaleX(-1) rotate(16deg);
         -ms-transform: scaleX(-1) rotate(16deg);
@@ -4847,7 +4881,7 @@ a:hover {
     height: 497px;
     background-position: center;
     background-image: url("../img/backgrounds/Фон 1 Mobile.png");
-    background-image: url("../img/backgrounds/Фон 1 Mobile.webp");
+    background-image: url("../img/backgrounds/Фон 1 Mobile.png");
     background-color: rgba(35, 35, 35, 0.95);
   }
 
@@ -4858,7 +4892,7 @@ a:hover {
   .first .slide-who {
     background-position: center;
     background-image: url("../img/backgrounds/Фон 1 Mobile.png");
-    background-image: url("../img/backgrounds/Фон 1 Mobile.webp");
+    background-image: url("../img/backgrounds/Фон 1 Mobile.png");
     background-color: rgba(35, 35, 35, 0.95);
   }
 
@@ -5441,8 +5475,19 @@ a:hover {
   }
 }
 @supports (-webkit-appearance:none){
+.first .slide-who{background-image:url("../img/backgrounds/Фон 1.webp")}
+.first .slide-shop{background-image:url("../img/backgrounds/Фон 2.webp")}
+.first .slide-shop .container{background-image:url("../img/first-shop.webp")}
 .first__arrow{background-image:url("../img/arrow.svg")}
+.about{background-image:url("../img/backgrounds/3.webp")}
+.about .back-img-mob{background-image:url("../img/angel.webp")}
+.why{background-image:url("../img/backgrounds/1.webp")}
 .why__items .item{background-image:url("../img/icon-back.webp")}
+.products{background-image:url("../img/backgrounds/1.webp")}
+.products__container-first{background-image:url("../img/backgrounds/4.webp")}
+.products__container-second{background-image:url("../img/backgrounds/5.webp")}
+.how{background-image:url("../img/backgrounds/1.webp")}
+.partner{background-image:url("../img/backgrounds/3.webp")}
 .popup-product::after{background-image:url("../img/angel.webp")}
 .popup-product .popup-arrow{background-image:url("data:image/svg+xml,%3Csvg width='20' height='26' viewBox='0 0 20 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.66948e-07 13L19.5 0.875645L19.5 25.1244L1.66948e-07 13Z' fill='%23D9D9D9'/%3E%3C/svg%3E")}
 .popup-product .popup-arrow.arrow-prev{background-image:url("data:image/svg+xml,%3Csvg width='20' height='26' viewBox='0 0 20 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.66948e-07 13L19.5 0.875645L19.5 25.1244L1.66948e-07 13Z' fill='%23D9D9D9'/%3E%3C/svg%3E")}
@@ -5484,6 +5529,8 @@ a:hover {
 
 @supports (-webkit-appearance:none){
 .first .slide{background-image:url("../img/backgrounds/Фон 1 Mobile.webp")}
+.first .slide{background-image:url("../img/backgrounds/Фон 1 Mobile.webp")}
+.first .slide-who{background-image:url("../img/backgrounds/Фон 1 Mobile.webp")}
 .first .slide-who{background-image:url("../img/backgrounds/Фон 1 Mobile.webp")}
 .popup-product .popup-arrow{background-image:url("../img/arrow.svg") !important}
 }

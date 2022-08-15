@@ -271,7 +271,7 @@ a:hover {
 
 .why {
   color: white;
-  background-image: url("../img/backgrounds/1.webp");
+  background-image: url("../img/backgrounds/1.png");
 }
 
 .why .container {
@@ -502,6 +502,7 @@ a:hover {
   }
 }
 @supports (-webkit-appearance:none){
+.why{background-image:url("../img/backgrounds/1.webp")}
 .why__items .item{background-image:url("../img/icon-back.webp")}
 }
 

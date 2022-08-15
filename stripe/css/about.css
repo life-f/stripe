@@ -271,7 +271,7 @@ a:hover {
 
 .about {
   position: relative;
-  background-image: url("../img/backgrounds/3.webp");
+  background-image: url("../img/backgrounds/3.png");
   overflow-x: clip;
 }
 
@@ -294,6 +294,20 @@ a:hover {
   position: absolute;
   left: 0;
   bottom: -122px;
+}
+
+.about .back-img-mob {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.2;
+  background-image: url("../img/angel.png");
+  background-size: 1083px;
+  background-repeat: no-repeat;
+  background-position: 639px -94px;
+  min-width: 50%;
+  height: 100%;
 }
 
 .about .back-img {
@@ -424,6 +438,26 @@ a:hover {
   .about .img-left {
     width: 258px;
     bottom: -93px;
+  }
+
+  .about .back-img-mob {
+    left: 0;
+    right: unset;
+    -webkit-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+            transform: scaleX(-1);
+    background-size: 609px;
+    background-position: -17px -40px;
+  }
+
+  .about .back-img-mob {
+    left: unset;
+    right: 0;
+    -webkit-transform: unset;
+        -ms-transform: unset;
+            transform: unset;
+    background-size: 310px;
+    background-position: -65px 45px;
   }
 
   .about .back-img {
@@ -565,7 +599,8 @@ a:hover {
   }
 }
 @supports (-webkit-appearance:none){
-
+.about{background-image:url("../img/backgrounds/3.webp")}
+.about .back-img-mob{background-image:url("../img/angel.webp")}
 }
 
  @media screen and (max-width: 1440px){

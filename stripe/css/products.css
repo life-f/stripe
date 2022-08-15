@@ -270,7 +270,7 @@ a:hover {
 }
 
 .products {
-  background-image: url("../img/backgrounds/1.webp");
+  background-image: url("../img/backgrounds/1.png");
 }
 
 .products .container {
@@ -284,12 +284,12 @@ a:hover {
 .products__container-first {
   position: relative;
   margin-bottom: 42px;
-  background-image: url("../img/backgrounds/4.webp");
+  background-image: url("../img/backgrounds/4.png");
   overflow-x: clip;
 }
 
 .products__container-second {
-  background-image: url("../img/backgrounds/5.webp");
+  background-image: url("../img/backgrounds/5.png");
 }
 
 .products .back-img {
@@ -690,7 +690,9 @@ a:hover {
   }
 }
 @supports (-webkit-appearance:none){
-
+.products{background-image:url("../img/backgrounds/1.webp")}
+.products__container-first{background-image:url("../img/backgrounds/4.webp")}
+.products__container-second{background-image:url("../img/backgrounds/5.webp")}
 }
 
  @media (min-width: 1024px){

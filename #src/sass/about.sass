@@ -1,7 +1,7 @@
 @import "base"
 .about
     position: relative
-    background-image: url("../img/backgrounds/3.webp")
+    background-image: url("../img/backgrounds/3.png")
     overflow-x: clip
     @media screen and (max-width: $mobileS)
         overflow-x: hidden
@@ -35,6 +35,30 @@
         @media screen and (max-width: $mobileS)
             display: none
 
+    .back-img-mob
+        z-index: 0
+        position: absolute
+        top: 0
+        right: 0
+        opacity: 0.2
+        background-image: url("../img/angel.png")
+        background-size: 1083px
+        background-repeat: no-repeat
+        background-position: 639px -94px
+        min-width: 50%
+        height: 100%
+        @media screen and (max-width: $tabletS)
+            left: 0
+            right: unset
+            transform: scaleX(-1)
+            background-size: 609px
+            background-position: -17px -40px
+        @media screen and (max-width: $tabletS)
+            left: unset
+            right: 0
+            transform: unset
+            background-size: 310px
+            background-position: -65px 45px
 
     .back-img
         z-index: 0

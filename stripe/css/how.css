@@ -273,7 +273,7 @@ a:hover {
   position: relative;
   padding: 64px 0 19px;
   color: white;
-  background-image: url("../img/backgrounds/1.webp");
+  background-image: url("../img/backgrounds/1.png");
 }
 
 .how .back-img {
@@ -566,7 +566,7 @@ a:hover {
   }
 }
 @supports (-webkit-appearance:none){
-
+.how{background-image:url("../img/backgrounds/1.webp")}
 }
 
  @media screen and (max-width: 1440px){

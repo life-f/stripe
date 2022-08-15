@@ -271,7 +271,7 @@ a:hover {
 
 .partner {
   padding: 28px 0 44px;
-  background-image: url("../img/backgrounds/3.webp");
+  background-image: url("../img/backgrounds/3.png");
 }
 
 .partner h2 {
@@ -474,7 +474,7 @@ a:hover {
   }
 }
 @supports (-webkit-appearance:none){
-
+.partner{background-image:url("../img/backgrounds/3.webp")}
 }
 
  @media screen and (max-width: 1440px){
