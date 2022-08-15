@@ -2,15 +2,23 @@
 .partner
     padding: 28px 0 44px
     background-image: url("../img/backgrounds/3.webp")
+    @media screen and (max-width: $tabletS)
+        padding: 32px 0
 
     h2
         font-family: "Spray Letters"
         font-size: 40px
-        line-height: 40px
+        line-height: 100%
         letter-spacing: 0.0em
+        @media screen and (max-width: $tabletS)
+            margin-bottom: 10px
+            font-size: 23px
 
     &__subtitle
         text-align: center
+        @media screen and (max-width: $tabletS)
+            font-size: 16px
+            line-height: 20px
 
     &__content
         margin: 0 290px 0 390px
@@ -18,16 +26,33 @@
         align-items: flex-end
         justify-content: center
         gap: 320px
+        @media screen and (max-width: $tabletS)
+            margin: 0 0 0 30px
+            gap: 235px
 
     &__contacts
         & .contact
             margin-bottom: 20px
             font-size: 18px
             line-height: 22px
+            @media screen and (max-width: $tabletS)
+                margin-bottom: 7px
+                font-size: 13px
+                line-height: 16px
 
             &__icon
                 svg
                     width: 22px
                     height: auto
 
+                @media screen and (max-width: $tabletS)
+                    display: none
 
+    &__image
+        img
+            width: 100%
+            height: auto
+
+        @media screen and (max-width: $tabletS)
+            width: 130px
+            transform: rotate(21deg)

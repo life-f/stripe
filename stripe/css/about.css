@@ -361,6 +361,11 @@ a:hover {
 }
 
 @media screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
   h1,
   .h1 {
     font-size: 50px;
@@ -381,6 +386,11 @@ a:hover {
     line-height: 28px;
   }
 
+  .fs-25 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
   .fs-20 {
     font-size: 18px;
   }
@@ -394,7 +404,7 @@ a:hover {
   }
 
   .about .container {
-    padding: 59px 85px;
+    padding: 59px 85px 86px;
   }
 
   .about h2 {
@@ -403,7 +413,7 @@ a:hover {
 
   .about .img-left {
     width: 258px;
-    bottom: -142px;
+    bottom: -93px;
   }
 
   .about .back-img {
@@ -428,6 +438,7 @@ a:hover {
   }
 
   .about__text {
+    margin-bottom: 30px;
     font-size: 18px;
     line-height: 20px;
   }
@@ -439,7 +450,7 @@ a:hover {
   .about__design .design__image {
     grid-row: 2/3;
     place-self: center;
-    margin-bottom: 54px;
+    margin-bottom: 66px;
     width: 330px;
   }
 

@@ -4,34 +4,52 @@
     padding: 64px 0 19px
     color: $white
     background-image: url("../img/backgrounds/1.webp")
+    @media screen and (max-width: $tabletS)
+        padding: 71px 0 40px
 
     .back-img
         width: 313px
         top: -20px
         left: -10px
         transform: scaleX(-1)
+        @media screen and (max-width: $tabletS)
+            width: 207px
+            left: 0
 
     h2
         margin-bottom: 0
 
     &__slider
         margin-top: -45px
+        @media screen and (max-width: $tabletS)
+            margin-top: -32px
 
         &.slick-dotted.slick-slider
             margin-bottom: 0
 
         & .arrow
             top: 42%
+            @media screen and (max-width: $tabletS)
+                top: 38%
+                width: 45px
+                height: 45px
+                background-size: 22px
 
             &.arrow-next
                 right: 76px
+                @media screen and (max-width: $tabletS)
+                    right: 80px
 
             &.arrow-prev
                 left: 76px
+                @media screen and (max-width: $tabletS)
+                    left: 80px
 
     &__dots
         z-index: 10
         bottom: 0px
+        @media screen and (max-width: $tabletS)
+            bottom: -25px
 
         li
             margin: 0 2px
@@ -39,6 +57,9 @@
             height: 16px
             background-color: $dark-grey
             border-radius: 50%
+            @media screen and (max-width: $tabletS)
+                width: 19px
+                height: 19px
 
             &.slick-active
                 background-color: $white
@@ -52,11 +73,20 @@
         align-items: center
         gap: 70px
         //padding: 0 250px
+        @media screen and (max-width: $tabletS)
+            gap: 10px
 
         &__image
             margin-left: -160px
             width: 433px
             height: auto
+            @media screen and (max-width: $tabletS)
+                margin-left: -120px
+                width: 259px
+
+            img
+                width: 100%
+                height: auto
 
         &__title
             display: inline-block
@@ -67,6 +97,11 @@
             line-height: 38px
             font-weight: 800
             background-color: $black
+            @media screen and (max-width: $tabletS)
+                margin: 20px 0 22px
+                padding: 5px 10px
+                font-size: 20px
+                line-height: 25px
 
         &__desc
             max-width: 270px
@@ -74,3 +109,7 @@
             font-size: 25px
             line-height: 30px
             background-color: $black-op50
+            @media screen and (max-width: $tabletS)
+                max-width: 145px
+                font-size: 13px
+                line-height: 16px

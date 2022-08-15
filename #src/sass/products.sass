@@ -7,14 +7,27 @@
         position: relative
 
     &__container
+        background-size: cover
+
         &-first
+            position: relative
             margin-bottom: 42px
             background-image: url("../img/backgrounds/4.webp")
+            overflow-x: clip
             @media screen and (max-width: $tabletS)
                 margin-bottom: 56px
 
         &-second
             background-image: url("../img/backgrounds/5.webp")
+
+    .back-img
+        width: 330px
+        right: -69px
+        bottom: -100px
+        @media screen and (max-width: $tabletS)
+            width: 277px
+            right: -42px
+            bottom: -87px
 
     &__banner
         position: absolute
@@ -77,10 +90,12 @@
     &__btn
         font-size: 15px !important
         line-height: 18px !important
-        
+
         &-mob
             display: none !important
             @media (max-width: $tabletS)
+                font-size: 20px !important
+                line-height: 24px !important
                 display: block !important
                 opacity: 0
 
@@ -113,7 +128,6 @@
             @media (max-width: $tabletS)
                 flex-direction: column
                 gap: 45px
-
 
 
         &__image
@@ -149,8 +163,9 @@
         & .slick-list
             padding: 0 40px !important
             height: 320px
-            //@media screen and (max-width: $tabletS)
-                //height: 250px
+            @media screen and (max-width: $tabletS)
+                padding: 0px !important
+            //height: 250px
 
             @media screen and (max-width: $tabletS)
                 height: 350px
@@ -158,13 +173,15 @@
         &.slick-dotted.slick-slider
             padding-top: 19px
             padding-bottom: 37px
+            @media screen and (max-width: $tabletS)
+                padding: 5px 0 39px
 
     &__dots
         z-index: 10
         bottom: 8px
 
         @media (max-width: $tabletS)
-            bottom: 88px
+            bottom: 99px
 
         li
             width: 20px

@@ -488,6 +488,11 @@ a:hover {
 }
 
 @media screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
   h1,
   .h1 {
     font-size: 50px;
@@ -506,6 +511,11 @@ a:hover {
     padding: 7px 20px;
     font-size: 22px;
     line-height: 28px;
+  }
+
+  .fs-25 {
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .fs-20 {

@@ -349,6 +349,11 @@ a:hover {
   height: auto;
 }
 
+.how .slide__image img {
+  width: 100%;
+  height: auto;
+}
+
 .how .slide__title {
   display: inline-block;
   padding: 5px;
@@ -375,6 +380,11 @@ a:hover {
 }
 
 @media screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
   h1,
   .h1 {
     font-size: 50px;
@@ -395,6 +405,11 @@ a:hover {
     line-height: 28px;
   }
 
+  .fs-25 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
   .fs-20 {
     font-size: 18px;
   }
@@ -405,6 +420,65 @@ a:hover {
 
   .lh-26 {
     line-height: 20px;
+  }
+
+  .how {
+    padding: 71px 0 40px;
+  }
+
+  .how .back-img {
+    width: 207px;
+    left: 0;
+  }
+
+  .how__slider {
+    margin-top: -32px;
+  }
+
+  .how__slider .arrow {
+    top: 38%;
+    width: 45px;
+    height: 45px;
+    background-size: 22px;
+  }
+
+  .how__slider .arrow.arrow-next {
+    right: 80px;
+  }
+
+  .how__slider .arrow.arrow-prev {
+    left: 80px;
+  }
+
+  .how__dots {
+    bottom: -25px;
+  }
+
+  .how__dots li {
+    width: 19px;
+    height: 19px;
+  }
+
+  .how .slide {
+    gap: 10px;
+  }
+
+  .how .slide__image {
+    margin-left: -120px;
+    width: 259px;
+  }
+
+  .how .slide__title {
+    margin: 20px 0 22px;
+    padding: 5px 10px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .how .slide__desc {
+    max-width: 145px;
+    font-size: 13px;
+    line-height: 16px;
   }
 }
 @supports (-webkit-appearance:none){

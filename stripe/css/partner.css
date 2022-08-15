@@ -277,7 +277,7 @@ a:hover {
 .partner h2 {
   font-family: "Spray Letters";
   font-size: 40px;
-  line-height: 40px;
+  line-height: 100%;
   letter-spacing: 0.0em;
 }
 
@@ -310,6 +310,11 @@ a:hover {
   height: auto;
 }
 
+.partner__image img {
+  width: 100%;
+  height: auto;
+}
+
 @media screen and (max-width: 1440px) {
   .container {
     width: 100vw;
@@ -317,6 +322,11 @@ a:hover {
 }
 
 @media screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
   h1,
   .h1 {
     font-size: 50px;
@@ -337,6 +347,11 @@ a:hover {
     line-height: 28px;
   }
 
+  .fs-25 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
   .fs-20 {
     font-size: 18px;
   }
@@ -347,6 +362,42 @@ a:hover {
 
   .lh-26 {
     line-height: 20px;
+  }
+
+  .partner {
+    padding: 32px 0;
+  }
+
+  .partner h2 {
+    margin-bottom: 10px;
+    font-size: 23px;
+  }
+
+  .partner__subtitle {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .partner__content {
+    margin: 0 0 0 30px;
+    gap: 235px;
+  }
+
+  .partner__contacts .contact {
+    margin-bottom: 7px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .partner__contacts .contact__icon {
+    display: none;
+  }
+
+  .partner__image {
+    width: 130px;
+    -webkit-transform: rotate(21deg);
+        -ms-transform: rotate(21deg);
+            transform: rotate(21deg);
   }
 }
 @supports (-webkit-appearance:none){

@@ -7,6 +7,11 @@
         align-items: center
         gap: 19px
         padding: 33px
+        @media screen and (max-width: $tabletS)
+            padding: 18px 0 10px
+            gap: 5px
+            font-size: 13px
+            line-height: 18px
 
     a
         color: $black
@@ -14,15 +19,23 @@
 
     &__title
         margin-bottom: 15px
+        @media screen and (max-width: $tabletS)
+            margin-bottom: 26px
+
 
     &__social
         display: flex
         align-items: center
         gap: 40px
+        @media screen and (max-width: $tabletS)
+            gap: 66px
+            margin-bottom: 18px
 
         & .social-item svg
             width: 50px
             height: auto
+            @media screen and (max-width: $tabletS)
+                width: 40px
 
 .alert
     padding: 35px 0 38px
@@ -31,4 +44,12 @@
     font-size: 20px
     line-height: 24px
     text-align: center
+    @media screen and (max-width: $tabletS)
+        padding: 31px 0 17px
+        font-size: 18px
+        line-height: 22px
+        span
+            display: inline-block
+            margin: 0 auto
+            max-width: 375px
 

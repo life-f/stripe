@@ -339,6 +339,11 @@ a:hover {
 }
 
 @media screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
   h1,
   .h1 {
     font-size: 50px;
@@ -357,6 +362,11 @@ a:hover {
     padding: 7px 20px;
     font-size: 22px;
     line-height: 28px;
+  }
+
+  .fs-25 {
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .fs-20 {
@@ -390,27 +400,36 @@ a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 20px;
-    margin-bottom: 28px;
+    gap: 0 20px;
+    margin-bottom: 15px;
   }
 
   .why__items .item {
     width: 189px;
+    padding-top: 40px;
     background-image: url("../img/icon-back.png");
     background-size: 176px;
     background-position: top;
     background-repeat: no-repeat;
   }
 
+  .why__items .item:last-child {
+    width: 200px;
+  }
+
   .why__items .item__icon {
-    height: 65px;
+    height: auto;
+    width: 64px;
+    margin-bottom: 29px;
   }
 
   .why__items .item__icon img {
-    height: 65px;
+    width: 100%;
+    height: auto;
   }
 
   .why__items .item__title {
+    margin-bottom: 22px;
     font-size: 18px;
     line-height: 22px;
   }
