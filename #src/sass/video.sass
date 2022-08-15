@@ -1,0 +1,24 @@
+@import "base"
+.video
+    background: rgba(0,0,0,0.8)
+
+    display: grid
+    .video-title
+        padding: 14px 0
+        background: rgba(0,0,0,0.8)
+        font-family: "Thirsty Caps"
+        font-size: 75px
+        line-height: 67px
+        text-align: center
+        letter-spacing: 0.04em
+        color: $yellow
+        width: 100%
+        @media screen and (max-width: $tabletS)
+            font-size: 55px
+            line-height: 49px
+
+    video
+        width: auto
+        margin: auto
+        max-width: 100vw
+        max-height: 90vh

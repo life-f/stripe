@@ -4,7 +4,8 @@ $(document).ready(function () {
             $("#years-popup").removeClass("active")
         })
         $("#no").click(() => {
-            window.close()
+            // window.close()
+            window.location.replace('https://disney.ru');
         })
 
         $(".link-to-view").on("click", function () {
@@ -176,6 +177,35 @@ $(document).ready(function () {
         //     $('.pop-up__card').removeClass('active')
         //     $('.pop-up__wall').removeClass('active')
         // })
+
+
+        var $video = $('video');
+        var $window = $(window);
+
+        $window.scroll(function() {
+
+            var $topOfVideo = $video.offset().top;
+            var $bottomOfVideo = $video.offset().top + $video.outerHeight();
+
+            var $topOfScreen = $window.scrollTop();
+            var $bottomOfScreen = $window.scrollTop() + $window.innerHeight();
+
+            console.log('    ==   ')
+            console.log($topOfVideo)
+            console.log($bottomOfVideo)
+            console.log($topOfScreen)
+            console.log($bottomOfScreen)
+
+            if(($bottomOfScreen > $bottomOfVideo) && ($topOfScreen < $topOfVideo)){
+                $video[0].play();
+                console.log('play')
+            } else {
+                console.log('pause')
+
+                $video[0].pause();
+            }
+
+        });
 
     }
 )
