@@ -455,6 +455,9 @@ a:hover {
   font-size: 40px;
   line-height: 100%;
   font-weight: 700;
+}
+
+.popup__subtitle {
   margin-bottom: 25px;
   font-size: 20px;
   line-height: 100%;
@@ -547,7 +550,7 @@ a:hover {
     right: -50px;
   }
 
-  .popup__image {
+  .popup__img img {
     width: 160px;
   }
 
@@ -555,7 +558,7 @@ a:hover {
     font-size: 18px;
   }
 
-  .popup__title {
+  .popup__subtitle {
     font-size: 12px;
   }
 }
@@ -624,6 +627,10 @@ a:hover {
     line-height: 14px;
   }
 
+  .popup-years {
+    padding: 64px 35px;
+  }
+
   .popup-product .popup-arrow {
     width: 34px;
     height: 34px;
@@ -633,6 +640,40 @@ a:hover {
     background-size: 20px;
     background-position: center;
     background-color: #d6d4d4;
+  }
+
+  .popup__img img {
+    width: 118px;
+  }
+
+  .popup__title {
+    font-size: 15px;
+  }
+
+  .popup__subtitle {
+    font-size: 10px;
+  }
+
+  .popup__btns {
+    gap: 30px;
+  }
+
+  .popup__btns .btn {
+    padding: 1px;
+  }
+
+  .popup__btns .btn .content {
+    padding: 6px 9px;
+  }
+
+  .popup__btns .btn {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .popup__btns .btn {
+    font-size: 15px;
+    line-height: 18px;
   }
 }
 

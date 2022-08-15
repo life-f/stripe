@@ -1,9 +1,17 @@
 $(document).ready(function () {
 
-        // $("#years-popup").addClass("active")
+        $("#years-popup").addClass("active")
 
         $("#yes").click(() => {
             $("#years-popup").removeClass("active")
+        })
+        $("#no").click(() => {
+            window.close()
+        })
+
+        $(".link-to-view").on("click", function () {
+            let id = $(this).attr('data-for')
+            $('#' + id)[0].scrollIntoView({behavior: "smooth"})
         })
 
         $('.products__btn').on('click', function () {
@@ -127,8 +135,8 @@ $(document).ready(function () {
         //     newBlock.insertAdjacentHTML('beforeend', newBlockChildrens[i].outerHTML)
         // })
 
-        $('.products__slider').each(function (){
-            if($(this).children('.slide').length<=3){
+        $('.products__slider').each(function () {
+            if ($(this).children('.slide').length <= 3) {
                 $(this).html($(this).html() + $(this).html())
             }
         })

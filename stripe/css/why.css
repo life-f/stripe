@@ -309,6 +309,10 @@ a:hover {
           align-items: center;
   padding-top: 35px;
   width: 220px;
+  background-image: url("../img/icon-back.png");
+  background-size: 176px;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 .why__items .item__icon {
@@ -407,10 +411,6 @@ a:hover {
   .why__items .item {
     width: 189px;
     padding-top: 40px;
-    background-image: url("../img/icon-back.png");
-    background-size: 176px;
-    background-position: top;
-    background-repeat: no-repeat;
   }
 
   .why__items .item:last-child {
@@ -502,7 +502,7 @@ a:hover {
   }
 }
 @supports (-webkit-appearance:none){
-
+.why__items .item{background-image:url("../img/icon-back.webp")}
 }
 
  @media screen and (max-width: 1440px){
@@ -516,7 +516,7 @@ a:hover {
  @media screen and (max-width: 1024px){
 
 @supports (-webkit-appearance:none){
-.why__items .item{background-image:url("../img/icon-back.webp")}
+
 }
 
 }

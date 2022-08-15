@@ -104,9 +104,28 @@
         @media screen and (max-width: $mobileS)
             margin: 51px auto 0
 
+        picture
+            grid-column: 1/2
+            grid-row: 1/3
+            width: 415px
+            height: auto
+
+            img
+                width: 100%
+                height: auto
+
+            @media screen and (max-width: $tabletS)
+                grid-row: 2/3
+                place-self: center
+                margin-bottom: 66px
+                width: 330px
+            @media screen and (max-width: $mobileS)
+                margin-bottom: 64px
+                width: 90vw
+                max-width: 90%
 
         .design
-            &__image
+            //&__image
                 grid-column: 1/2
                 grid-row: 1/3
                 width: 415px
