@@ -1,7 +1,5 @@
 $(document).ready(function () {
 
-        $("#years-popup").addClass("active")
-
         $("#yes").click(() => {
             $("#years-popup").removeClass("active")
         })

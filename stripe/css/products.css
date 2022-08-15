@@ -406,8 +406,8 @@ a:hover {
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  -webkit-filter: drop-shadow(7px 15px 32px rgba(0, 0, 0, 0.34));
-          filter: drop-shadow(7px 15px 32px rgba(0, 0, 0, 0.34));
+  -webkit-filter: drop-shadow(7px 15px 15px rgba(0, 0, 0, 0.34));
+          filter: drop-shadow(7px 15px 15px rgba(0, 0, 0, 0.34));
 }
 
 .products .slide__info {

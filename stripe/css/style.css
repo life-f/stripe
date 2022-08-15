@@ -1351,7 +1351,7 @@ a:hover {
   background-image: url("../img/angel.png");
   background-size: 1083px;
   background-repeat: no-repeat;
-  background-position: 639px -94px;
+  background-position: 0px -94px;
   min-width: 50%;
   height: 100%;
 }
@@ -2160,8 +2160,8 @@ a:hover {
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  -webkit-filter: drop-shadow(7px 15px 32px rgba(0, 0, 0, 0.34));
-          filter: drop-shadow(7px 15px 32px rgba(0, 0, 0, 0.34));
+  -webkit-filter: drop-shadow(7px 15px 15px rgba(0, 0, 0, 0.34));
+          filter: drop-shadow(7px 15px 15px rgba(0, 0, 0, 0.34));
 }
 
 .products .slide__info {
@@ -3518,7 +3518,7 @@ a:hover {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(35, 35, 35, 0.95);
   z-index: 100;
 }
 
