@@ -1,7 +1,7 @@
 @import "base"
 
 .products
-    background-image: url("../img/backgrounds/1.png")
+    background-image: url("../img/backgrounds/1.jpg")
 
     .container
         position: relative
@@ -130,10 +130,15 @@
         &.slick-current
             & .slide__image
                 width: 320px
+                border: none !important
+                outline: none !important
                 @media screen and (max-width: $tabletS)
                     width: 250px
                 @media screen and (max-width: $mobileS)
                     width: 200px
+
+                &:hover
+                    cursor: pointer
 
         &__content
             display: flex

@@ -270,7 +270,7 @@ a:hover {
 }
 
 .products {
-  background-image: url("../img/backgrounds/1.png");
+  background-image: url("../img/backgrounds/1.jpg");
 }
 
 .products .container {
@@ -389,6 +389,13 @@ a:hover {
 .products .slide.slick-center .slide__image,
 .products .slide.slick-current .slide__image {
   width: 320px;
+  border: none !important;
+  outline: none !important;
+}
+
+.products .slide.slick-center .slide__image:hover,
+.products .slide.slick-current .slide__image:hover {
+  cursor: pointer;
 }
 
 .products .slide__content {

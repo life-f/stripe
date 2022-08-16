@@ -1,3 +1,26 @@
+let how_data = {
+    variableWidth: false,
+    dots: true,
+    dotsClass: "slick-dots how__dots",
+    arrows: true,
+    prevArrow: '<div class="arrow-prev first__arrow arrow"></div>',
+    nextArrow: '<div class="arrow-next first__arrow arrow"></div>',
+    slidesToShow: 1,
+    infinite: true,
+    autoplay: true,
+    responsive: [
+        {
+            breakpoint: 560,
+            settings: {
+                variableWidth: false,
+                slidesToShow: 1,
+                arrows: false,
+                dots: true,
+            }
+        }
+    ]
+}
+
 $(document).ready(function () {
 
         $("#yes").click(() => {
@@ -105,28 +128,8 @@ $(document).ready(function () {
             ]
         });
 
-        $('.how__slider').slick({
-            variableWidth: false,
-            dots: true,
-            dotsClass: "slick-dots how__dots",
-            arrows: true,
-            prevArrow: '<div class="arrow-prev first__arrow arrow"></div>',
-            nextArrow: '<div class="arrow-next first__arrow arrow"></div>',
-            slidesToShow: 1,
-            infinite: true,
-            autoplay: true,
-            responsive: [
-                {
-                    breakpoint: 560,
-                    settings: {
-                        variableWidth: false,
-                        slidesToShow: 1,
-                        arrows: false,
-                        dots: true,
-                    }
-                }
-            ]
-        });
+
+        $('.how__slider').slick(how_data);
 
         // var length = $('#selected ul').children('li').length
         //
@@ -182,29 +185,25 @@ $(document).ready(function () {
         var $video = $('video');
         var $window = $(window);
 
+        let how_slider  = $('.how__slider')
         $window.scroll(function() {
 
             var $topOfVideo = $video.offset().top;
             var $bottomOfVideo = $video.offset().top + $video.outerHeight();
 
+            let bottomOfSlider = how_slider.offset().top + how_slider.outerHeight();
+
             var $topOfScreen = $window.scrollTop();
             var $bottomOfScreen = $window.scrollTop() + $window.innerHeight();
 
-            console.log('    ==   ')
-            console.log($topOfVideo)
-            console.log($bottomOfVideo)
-            console.log($topOfScreen)
-            console.log($bottomOfScreen)
-
-            if(($bottomOfScreen > $bottomOfVideo) && ($topOfScreen < $topOfVideo)){
+            if($bottomOfScreen > ($topOfVideo+100) ) {
                 $video[0].play();
                 console.log('play')
-            } else {
-                console.log('pause')
-
-                $video[0].pause();
             }
 
+            if($bottomOfScreen > bottomOfSlider) {
+                how_data.autoplay = true
+            }
         });
 
     }

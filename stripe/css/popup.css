@@ -450,6 +450,15 @@ a:hover {
   line-height: 24px;
 }
 
+.popup__img {
+  height: 283px;
+}
+
+.popup__img img {
+  height: 100%;
+  max-width: 100%;
+}
+
 .popup__title {
   margin-bottom: 18px;
   font-size: 40px;
@@ -550,8 +559,8 @@ a:hover {
     right: -50px;
   }
 
-  .popup__img img {
-    width: 160px;
+  .popup__img {
+    height: 125px;
   }
 
   .popup__title {
@@ -642,8 +651,8 @@ a:hover {
     background-color: #d6d4d4;
   }
 
-  .popup__img img {
-    width: 118px;
+  .popup__img {
+    height: 93px;
   }
 
   .popup__title {

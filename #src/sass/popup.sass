@@ -246,11 +246,17 @@
                 line-grid: 15.6px
                 text-align: center
 
-    &__img img
+    &__img
+        height: 283px
+
         @media screen and (max-width: $tabletS)
-            width: 160px
+            height: 125px
         @media screen and (max-width: $mobileS)
-            width: 118px
+            height: 93px
+
+        img
+            height: 100%
+            max-width: 100%
 
     &__title
         margin-bottom: 18px
